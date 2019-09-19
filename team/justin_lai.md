@@ -1,9 +1,9 @@
 # Justin Lai
 
-![Justin Lai Profile](./generic_woman.jpg)
+![Justin Lai Profile](./justin_lai.jpg)
 
 - Software Developer
-- email@example.com
+
 
 ## Links
 
@@ -13,9 +13,9 @@
 - [Website](#)
 - [Resume](#)
 
-## About Jane
+## About Justin
 
-Jane is from Canada where she has experience as a full stack Ruby on Rails engineer and WordPress hosting for creatives. She has also worked in infrastructure work. She moved from South America to Canada when she was 9. In her spare time she is an avid long reader, lover of Netflix, and loves corgis.
+Justin is a 4th year Undergrad Computer Science student at the University of Toronto, who is focusing on Aritifical Intelligence, Machine Learning 
 
 ## Strengths
 
