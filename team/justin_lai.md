@@ -1,6 +1,6 @@
 # Jane Doe
 
-![Jane Doe Profile](./generic_woman.jpg)
+![Justin Lai Profile](./generic_woman.jpg)
 
 - Software Developer
 - email@example.com
