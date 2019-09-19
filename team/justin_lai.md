@@ -1,4 +1,4 @@
-# Jane Doe
+# Justin Lai
 
 ![Justin Lai Profile](./generic_woman.jpg)
 
