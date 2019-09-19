@@ -15,9 +15,9 @@ You must [add the following topics](https://help.github.com/en/articles/classify
 
 ----
 
-# COMPANY NAME
+# NARWHALS
 
-![Team Logo](./logo.png)
+![Team Logo](./NARWHAL.png)
 
 COMPANY NAME is a company founded in the THEME industry. COMPANY NAME aims to VISION STATEMENT.
 
