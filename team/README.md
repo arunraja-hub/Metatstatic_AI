@@ -1,5 +1,5 @@
-People at COMPANY NAME
+People at Narwhals
 ---
 
-- [Jane Doe, Engineering](./jane_doe.md)
+- [Justin Lai, Computer Science](./jane_doe.md)
 - ...
