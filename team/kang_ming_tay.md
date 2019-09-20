@@ -18,12 +18,12 @@ Hello! I’m Kang Ming, a year 3 computer engineering major from the National Un
 
 ## Strengths
 
-- one
-- two
-- three
+- team player
+- detail oriented
+- inquisitive
 
 ## Weaknesses
 
-- one
-- two
-- three
+- overcommitting on things
+- time management
+- writing

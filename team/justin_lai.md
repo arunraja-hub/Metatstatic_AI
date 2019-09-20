@@ -26,6 +26,6 @@ Justin is a 4th year Undergrad Computer Science student at the University of Tor
 ## Weaknesses
 
 - Focus too much on the details of a project
-- Verbal Communication 
-- Lack of Startup Experience
+- Presentation skills
+- Time Management
  
