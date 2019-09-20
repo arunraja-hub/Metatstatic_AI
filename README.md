@@ -19,7 +19,7 @@ You must [add the following topics](https://help.github.com/en/articles/classify
 
 ![Team Logo](./NARWH_AI.png)
 
-COMPANY NAME is a company founded in the THEME industry. COMPANY NAME aims to VISION STATEMENT.
+NARWHALS is a company founded in the Healthcare industry. NARWHALS aims to VISION STATEMENT.
 
 Table of Contents
 ---
