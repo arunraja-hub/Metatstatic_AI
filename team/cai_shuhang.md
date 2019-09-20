@@ -1,9 +1,8 @@
 # Cai Shuhang
 
-![Cai Shuhang Profile](./generic_woman.jpg)
+![Cai Shuhang Profile](./toronto.jpg)
 
 - Software Developer
-- email@example.com
 
 ## Links
 
@@ -13,18 +12,22 @@
 - [Website](#)
 - [Resume](#)
 
-## About Jane
+## About Shuhang
 
-Jane is from Canada where she has experience as a full stack Ruby on Rails engineer and WordPress hosting for creatives. She has also worked in infrastructure work. She moved from South America to Canada when she was 9. In her spare time she is an avid long reader, lover of Netflix, and loves corgis.
+Hello everyone!
+
+Shuhang is my name and business analytics is my game. I'm a third-year undergraduate hailing from the sunny island of Singapore.
+
+I learned about the NOC program in my freshman year and the idea of working and living overseas independently for a year was really exciting. At the end of my first summer internship with Shopee (an E-commerce platform based in South East Asia), I realized that I enjoy working in an environment with tight-knit and communicative office culture. I picked Toronto because it was a new location offered by NOC and I'm all about taking the leap of faith
 
 ## Strengths
 
-- one
-- two
-- three
+- Communication
+- Teamwork
+- Attention to details
 
 ## Weaknesses
 
-- one
-- two
-- three
+- Reserved
+- Easily Distracted
+- Perfectionism

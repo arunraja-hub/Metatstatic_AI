@@ -1,9 +1,8 @@
 # Kang Ming Tay
 
-![Kang Ming Tay Profile](./generic_woman.jpg)
+![Kang Ming Tay Profile](./km_profile.jpg)
 
 - Software Developer
-- email@example.com
 
 ## Links
 
@@ -13,9 +12,9 @@
 - [Website](#)
 - [Resume](#)
 
-## About Jane
+## About Kang Ming 
 
-Jane is from Canada where she has experience as a full stack Ruby on Rails engineer and WordPress hosting for creatives. She has also worked in infrastructure work. She moved from South America to Canada when she was 9. In her spare time she is an avid long reader, lover of Netflix, and loves corgis.
+Hello! I’m Kang Ming, a year 3 computer engineering major from the National University of Singapore. In my free time, I enjoy watching / playing basketball, learning new cool technologies or binging netflix shows.
 
 ## Strengths
 
