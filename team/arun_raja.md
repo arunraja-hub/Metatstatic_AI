@@ -13,7 +13,7 @@
 - [Website](#)
 - [Resume](#)
 
-## About Jane
+## About Arun Raja
 
 Arun Raja is an AI and Computer Science undergraduate student from The University of Edinburgh. He is passionate about applying deep learning to healthacare applications. He loves to watch football and he is a fan of Bayern Munich.
 
