@@ -1,6 +1,6 @@
 # Arun Raja
 
-![Arun Raja Profile](./photo.png)
+![Arun Raja Profile](./photo.jpg)
 
 - Software Developer
 - arun.raja@mail.utoronto.ca
