@@ -1,6 +1,6 @@
 # Kang Ming Tay
 
-![Kang Ming Tay Profile](./km_profile.jpg)
+![Kang Ming Tay Profile](./km_profile.jpeg)
 
 - Software Developer
 
