@@ -1,30 +1,30 @@
 # Arun Raja
 
-![Arun Raja Profile](./generic_woman.jpg)
+![Arun Raja Profile](./photo.png)
 
 - Software Developer
-- email@example.com
+- arun.raja@mail.utoronto.ca
 
 ## Links
 
-- [GitHub](#)
-- [LinkedIn](#)
+- [GitHub](https://github.com/deeplearner2019)
+- [LinkedIn](https://www.linkedin.com/in/arun-raja-569502148/)
 - [Twitter](#)
 - [Website](#)
 - [Resume](#)
 
 ## About Jane
 
-Jane is from Canada where she has experience as a full stack Ruby on Rails engineer and WordPress hosting for creatives. She has also worked in infrastructure work. She moved from South America to Canada when she was 9. In her spare time she is an avid long reader, lover of Netflix, and loves corgis.
+Arun Raja is an AI and Computer Science undergraduate student from The University of Edinburgh. He is passionate about applying deep learning to healthacare applications. He loves to watch football and he is a fan of Bayern Munich.
 
 ## Strengths
 
-- one
-- two
-- three
+- Straightforward
+- Problem Solver
+- Patient
 
 ## Weaknesses
 
-- one
-- two
-- three
+- Presentation skills
+- Time management
+- Getting too absorbed into the details
