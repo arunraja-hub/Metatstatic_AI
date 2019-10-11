@@ -34,7 +34,7 @@ We will be starting by building a simple user interface and a baseline model for
 
 We will be trying a baseline model first to prove our concept of early cancer detection via computer vision. 
 A simple overview of the complete pipeline is given below:
-(./unnamed(2).jpg)
+![ml pipeline](./unnamed(2).jpg)
 
 We have summarised some of the considerations we will be making for building our model:
 1. Data Augmentation: the images will be augmented to introduce variations in the dataset. Examples of possible augmentations include: random cropping and horizontal/vertical flipping
@@ -64,4 +64,4 @@ We intend to launch the product officialy. AT this stage, we would have optimise
 
 
 We also present a Gantt chart below to formalize our intended schedule for the MVP development:
-(./Capture.jpg)
+![Gantt Chart](./Capture.jpg)

@@ -3,10 +3,10 @@
 ## Market Landscape
 
 Our vision is to create a computer vision application that detects metastatic cells in pathology scans at an early stage. This prevents the patients from having to go through the pain of later stages of cancer when prolonging survivability is the only option. Thus, the market we are targetting is the global metastatic cancer treatment market which values at USD 54 billion in 2017 and is expected to attain an 80%growth to USD 98 billion in 2025.
- (./unnamed(1).jpg)
+ ![global](./unnamed(1).jpg)
 
 The metastatic cancer treatment market can be further segmented into the different types of cancer as follows:
- (./unnamed.jpg)
+ ![segment](./unnamed.jpg)
 
 As seen in the graphic above, metastatic breast cancer forms a third of the treatment market. We managed to find the PatchCamelyon dataset which contains images extracted from histopathologic scans of lymph node sections. The images may have metastatic breast cancer cells. Therefore, we will be able to create a minimum viable product that detects the presence of metastatic breast cancer. Thus, with the MVP itself, we would have tackled a third of the metastatic cancer market.
 As a further testament to the immense potential this market holds, we would like to present an estimated revenue from administering these early-stage cancer detections.
