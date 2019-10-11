@@ -74,6 +74,9 @@ Our future plans are given below:
 
 We intend to demonstrate a simple UI and the primary machine learning model in our first prototype. It will include all our intended functionalities. Based on the remarks we get during the demo, we will improve our product
 
+We also present a timeline chart below to formalize our intended schedule for the MVP development:
+![timeline Chart](./Capture.jpg)
+
 ## Medium Term
 
 **Duration:** January 2020
@@ -88,5 +91,4 @@ We intend to demonstrate our barebones alpha version in the medium term. It will
 We intend to launch the product officialy. At this stage, we would have optimised our product to be able to detetc the different type of metastatic cancer. We would launch the product with Toronto hospitals to get first-hand reviews of our products performance before we make a wider launch across Ontario, Canada and eventually, the world.
 
 
-We also present a timeline chart below to formalize our intended schedule for the MVP development:
-![timeline Chart](./Capture.jpg)
+
