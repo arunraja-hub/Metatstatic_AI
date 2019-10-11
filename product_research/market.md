@@ -44,7 +44,7 @@ The revenue model will be a monthly subscription plan for accessing the web-base
 
 By making use of computer vision to identify metastatic cancer in small image patches from larger digital pathology scans, doctors will be able to identify the best treatment for patients with metastatic cancer at an early stage. Thus, it will significantly reduce the risk of patients reaching the stage where they only have a finite number of time left to spend with his/her love ones. If we don't implement the application now, there will be more family devastations caused by deaths from metastatic cancer each year. 
 
-The global metastatic cancer treatment market is estimated to be worth USD$54.1 BN in 2017 and it is expected to grow by 80% to almost USD$100 BN by 2025. There is tremendous potential in the market for our product. If we do not crack into the market now, we will lose the potential to expand by attracting VC funding. We might also lose the opportunity to become the leading company within the market, as  there are no company currently tackling the early detection of metastatic cancer.  
+The global metastatic cancer treatment market is estimated to be worth USD$54.1 BN in 2017 and it is expected to grow by 80% to almost USD$98 BN by 2025. There is tremendous potential in the market for our product. If we do not crack into the market now, we will lose the potential to expand by attracting VC funding. We might also lose the opportunity to become the leading company within the market, as  there are no company currently tackling the early detection of metastatic cancer.  
 
 ## Market Analysis 
  

@@ -22,7 +22,7 @@ We will be starting by building a simple user interface and a baseline model for
 
 ## User research plan
 
-As part of our product development plan, we have the following user research plan in order to gain a deeper insight into our customer dynamics. We are going to focus on two main areas:
+As part of our product development plan, we have the following user research plan in order to gain a deeper insight into our customer dynamics. We are going to focus on 3 main areas:
 
     1. We are interested to learn how are the doctors currently diagnosing the different types of metastatic cancers. 
     2. We want to understand what are common models to represent the characteristics of metastatic cancer
