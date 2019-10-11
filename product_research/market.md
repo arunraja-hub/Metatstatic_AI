@@ -41,7 +41,7 @@ This application will be targeted for use by cancer professionals at hospitals a
 
 The revenue model will be a monthly subscription plan for accessing the web-based application. Staff can access the web-based application via credentials specific to their medical institution.
 
-### Why is the Opportunity Cost to implement it now ?
+### What is the Opportunity Cost to implement it now ?
 
 By making use of computer vision to identify metastatic cancer in small image patches from larger digital pathology scans, doctors will be able to identify the best treatment for patients with metastatic cancer at an early stage. Thus, it will significantly reduce the risk of patients reaching the stage where they only have a finite number of time left to spend with his/her love ones. If we don't implement the application now, there will be more family devastations caused by deaths from metastatic cancers each year. 
 
