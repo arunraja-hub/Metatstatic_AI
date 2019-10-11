@@ -5,6 +5,7 @@
 As of now, we have the complete dataset for training and testing the computer vision models we will be building. We can divide the technical development of our application into 2 parts: 
 
 Frontend: Web application that medical professionals in hospitals use
+
 Backend: The computer vision model that classifies the pathology scans uploaded to the application
 
 We have planned to build both components separately, then integrate them at a later stage. To develop both components, we have to do some research to make the product as suitable as possible to the target problem and users.
