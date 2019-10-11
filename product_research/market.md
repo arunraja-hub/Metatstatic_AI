@@ -85,4 +85,3 @@ Every member in our team has some experience in developing Machine Learning appl
 
 On the other hand, our team is lacking an oncology specialist who can provide insights on the current solution to diagnose cancer and to help us creating a model to truly represent the characteristics of metastatic cancer. 
 
-
