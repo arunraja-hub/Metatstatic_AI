@@ -58,7 +58,7 @@ As part of our product development plan, we have the following user research pla
 We will be trying a baseline model first to prove our concept of early cancer detection via computer vision. 
 A simple overview of the complete pipeline is given below:
 
-![ml pipeline](./unnamed(2).jpg)
+![ml pipeline](./unnamed2.jpg)
 
 We have summarised some of the considerations we will be making for building our model:
 
