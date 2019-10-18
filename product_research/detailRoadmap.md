@@ -9,4 +9,4 @@ We have received constructive feedback from the testers on making certain improv
 ## Build Plan
 We have developed a complete Gantt chart which lays out the detailed schedule we will be following towards our final demo on November 28:
 
-![gantt](./image.jpg)
+![gantt](./image00.jpg)
