@@ -1,6 +1,10 @@
 # Customer Research
 
-## Customer Problem
+## Problem
+Hundreds of thousands of people are affected by metastatic cancer after they have been cured of their primary cancer. We want to help them by preventing them from going through the hardship and pain of cancer again.
+
+## Solution
+Our solution is to develop a computer vision detection application that can analyze an input image of a metastatic tissue and output whether tissue is malignant or not.
 
 ## Low Fidelity Mockups
 
