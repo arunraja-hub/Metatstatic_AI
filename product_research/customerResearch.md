@@ -8,7 +8,11 @@ Our solution is to develop a computer vision detection application that can anal
 
 ## Low Fidelity Mock ups
 
+### Home Page
+
  ![Home Page](./Home_Page.png)
+
+### Metastatic Cancer Analysis DashBoard
 
  ![Dashboard](./Dashboard.png)
 
