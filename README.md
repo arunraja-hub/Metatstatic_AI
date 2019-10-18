@@ -29,3 +29,5 @@ Table of Contents
 - [Product & Research](./product_research/)
     - [Market](./product_research/market.md)
     - [Roadmap](./product_research/roadmap.md)
+    - [Customer Research](./customerResearch.md)
+	- [Detail Roadmap](./detailRoadmap.md)

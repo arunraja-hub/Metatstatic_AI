@@ -8,3 +8,5 @@ Table of Contents
 
 - [Market](./market.md)
 - [Roadmap](./roadmap.md)
+- [Customer Research](./customerResearch.md)
+- [Detail Roadmap](./detailRoadmap.md)
