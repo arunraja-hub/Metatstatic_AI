@@ -8,13 +8,18 @@ Our solution is to develop a computer vision detection application that can anal
 
 ## Low Fidelity Mock ups
 
-### Metastatic Cancer Analysis DashBoard
+### Dashboard
+ 
+ ![Dashboard](./Doctor_Dashboard.png)
+
+### Image Analysis Page
+
+ ![Dashboard](./Image_Analysis.png)
+
+### Pathology Report Creation Page
 
  ![Dashboard](./Pathologist_Report.png)
 
-### Pathologist Patients' Data Dashboard
- 
- ![Dashboard](./Doctor_Dashboard.png)
 
 
 ## User Persona
