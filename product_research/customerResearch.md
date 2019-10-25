@@ -17,11 +17,6 @@ Our solution is to develop a computer vision detection application that can anal
  ![Dashboard](./Doctor_Dashboard.png)
 
 
- ### Home Page
-
- ![Home Page](./Home_Page.png)
-
-
 ## User Persona
 
 ### Doctors / Medical Oncologist in Hospitals
