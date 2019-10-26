@@ -15,7 +15,7 @@ You must [add the following topics](https://help.github.com/en/articles/classify
 
 ----
 
-# narwh.al
+# narwh.Al
 
 ![Team Logo](./NARWH_AI.png)
 
