@@ -30,7 +30,7 @@ The following 3 screenshots are our low fidelity visualisations of our product. 
 ### Pathology Report Creation Page
 
  ![Dashboard](./Pathologist_Report.png)
- [1] “Image-Surgical Pathology Report, UHN.” https://Www.researchgate.net/Profile/Sylvia_Asa/Publication/319357366/Figure/fig2/AS:613886776573952@1523373421045/The-Consolidated-Theranostic-Report-Surgical-Pathology-An-Example-Deidentified-To.png.
+ [1] “Image-Surgical Pathology Report, UHN.” https://www.researchgate.net/profile/Sylvia_Asa/publication/319357366/figure/fig2/AS:613886776573952@1523373421045/The-consolidated-theranostic-report-surgical-pathology-An-example-deidentified-to.png
 
 
 ## User Persona
