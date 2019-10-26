@@ -48,8 +48,8 @@ The doctor can also take H&E stained images in regular intervals and analyse the
 We interviewed a radiation oncologist at the University Health Network. He is focused on using radiation treatment for gynecological cancer. Thus, he has aloe been incolved in studying tissue cells to identify cancer. Therefore, he was able to give us some solid advice with regards to our solutions and prototype. We presented our prototype to him and allowed him to navigate through the different features/pages. He was impressed by how straighforward our design was. He said that doctors require an abstracted layout just like we did, as some of them may not be tech-savvy to explore the app in detail. 
 
 We had the following 2 tasks for him:
-    - Upload a scan and view risk score
-    - Navigate to report page, then edit if needed, if not submit it
+- Upload a scan and view risk score
+- Navigate to report page, then edit if needed, if not submit it
 
 He was able to do both tasks within a few seconds. He suggested that we talk to metatstatic cancer specialists as well to know the exact sections of the pathological report required. He also suggested that we have a sharing feature within the application so that certain images or reports an be shared with colleagues for further advice.
 
@@ -58,9 +58,11 @@ He was able to do both tasks within a few seconds. He suggested that we talk to 
 Based on our first round of testing, the mockups have satisfied the oncologist we had tested it with. He can easily understand the design and is able to navigate through the app’s features without any help. 
 
 We have received constructive feedback from the testers on making certain improvements. We have distilled the following pointsfrom our conversation with the oncologist:
+
 - Stick to the simple design in the lowfi prototype
 - Include specific sections required for the pathological report in the report creation feature
 - Add a sharing feature to easily share files with colleagues via the app
+
 We hope to incorporate these changes gradually for our demo product. We will also be talking to more pathologists and oncologists and pilot testing the workable protytpe with them to gain a lot more feedback.
 
 ## Build Plan
