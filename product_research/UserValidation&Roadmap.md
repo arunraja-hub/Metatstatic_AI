@@ -1,4 +1,4 @@
-# Customer Research
+# User Validation and Roadmap
 
 ## Problem
 Surviving cancer once is as lucky as it gets. However, a vast majority of cancer patients have to go through the vicious experience again in the form of metastatic cancer.
@@ -30,7 +30,7 @@ The following 3 screenshots are our low fidelity visualisations of our product. 
 ### Pathology Report Creation Page
 
  ![Dashboard](./Pathologist_Report.png)
- [1] “Surgical Pathology Report, UHN.” https://Www.researchgate.net/Profile/Sylvia_Asa/Publication/319357366/Figure/fig2/AS:613886776573952@1523373421045/The-Consolidated-Theranostic-Report-Surgical-Pathology-An-Example-Deidentified-To.png.
+ [1] “Image-Surgical Pathology Report, UHN.” https://Www.researchgate.net/Profile/Sylvia_Asa/Publication/319357366/Figure/fig2/AS:613886776573952@1523373421045/The-Consolidated-Theranostic-Report-Surgical-Pathology-An-Example-Deidentified-To.png.
 
 
 ## User Persona
