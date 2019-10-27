@@ -19,7 +19,7 @@ The following diagram gives a high-level overview of the machine learning proces
 
 ## Low Fidelity Mockups
 
-The following 3 screenshots are our low fidelity visualisations of our product. We showed this to the oncologist we interviewed. He was impressed by the simplicity of it. He mentioned that the functionalities visualised can be useful to pathologists. As of now, we are using hematoxylin and eosin stains for training the model such that it identfies metatstic tissue cells in them. He suggested that we try to generalise the model with other types of stained scans in the later stages of our product development. Also, he suggested that we talk to a pathologist to understand their specific needs they may require to ease the cancer detetction process even further.
+The following 3 screenshots are our low fidelity <var></var>isualisations of our product. We showed this to the oncologist we interviewed. He was impressed by the simplicity of it. He mentioned that the functionalities visualised can be useful to pathologists. As of now, we are using hematoxylin and eosin stains for training the model such that it identfies metatstic tissue cells in them. He suggested that we try to generalise the model with other types of stained scans in the later stages of our product development. Also, he suggested that we talk to a pathologist to understand their specific needs they may require to ease the cancer detetction process even further.
 
 ### Dashboard Page
  
