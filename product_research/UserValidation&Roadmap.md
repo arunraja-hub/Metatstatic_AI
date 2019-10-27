@@ -80,7 +80,7 @@ We hope to incorporate these changes gradually for our demo product. We will als
 
 We have developed a complete Gantt chart which lays out the detailed schedule we will be following towards our final demo on November 28:
 
-![gantt](./gantt.png)
+![gantt](./gantt.jpg)
 
 We hope to follow our timeline as close as possible and achieve the milestones mentioned.
 
