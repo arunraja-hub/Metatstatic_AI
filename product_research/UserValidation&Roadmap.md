@@ -19,7 +19,7 @@ The following diagram gives a high-level overview of the machine learning proces
 
 ## Low Fidelity Mockups
 
-The following 3 screen shots are our low fidelity visualizations of our product. We showed this to the oncologist we interviewed. He was impressed by the simplicity of it. He mentioned that the functionalities visualized can be useful to pathologists. As of now, we are using hematoxylin and eosin stains for training the model such that it identifies metastatic tissue cells in them. He suggested that we try to generalize the model with other types of stained scans in the later stages of our product development. Also, he suggested that we talk to a pathologist to understand their specific needs they may require to ease the cancer detection process even further.
+The following 3 screen shots are our low fidelity visualizations of our product. We showed this to the oncologist we interviewed. He was impressed by the simplicity of it. He mentioned that the functionalities visualized can be useful to pathologists. As of now, we are using hematoxylin and eosin stains for training the model such that it identifies metastatic tissue cells in them. He suggested that we try to generalize the model with other types of stained scans in the later stages of our product development. Also, he suggested that we talk to a pathologist to understand their specific features they may require to ease the cancer detection process even further.
 
 ### Dashboard Page
  
@@ -87,7 +87,7 @@ We hope to follow our timeline as close as possible and achieve the milestones m
 ## References
 [1]Tarver, Talicia. “Cancer Facts &amp; Figures 2012. American Cancer Society (ACS).” Journal of Consumer Health On the Internet, vol. 16, no. 3, 2012, pp. 366–367., doi:10.1080/15398285.2012.701177.
 
-[2] B. S. Veeling, J. Linmans, J. Winkens, T. Cohen, M. Welling. "Rotation Equivariant CNNs for Digital Pathology". arXiv:1806.03962 
+[2] "Metastatic tissue scans", B. S. Veeling, J. Linmans, J. Winkens, T. Cohen, M. Welling. "Rotation Equivariant CNNs for Digital Pathology". arXiv:1806.03962 
 
 [3]  "Sample-Surgical Pathology Report, UHN" https://www.researchgate.net/profile/Sylvia_Asa/publication/319357366/figure/fig2/AS:613886776573952@1523373421045/The-consolidated-theranostic-report-surgical-pathology-An-example-deidentified-to.png
 
