@@ -13,13 +13,13 @@ Thus, our problem is as follows (formulated in the form of an aim):
 
 ## Solution
 
-Our solution is to develop a computer vision detection application that can analyze an input image of a metastatic tissue and output whether tissue is malignant or not. That way we will be able to save the precious time the oncologist/pathologist spends on studying the suspected tissue. They will be able to know whether a given tissue is maligant or not immediately, thereby allowing them to make further decisions on the treatments to be admisistered to get rid of the cancer at the early stage. 
+Our solution is to develop a computer vision detection application that can analyze an input image of a metastatic tissue and output whether tissue is malignant or not. That way we will be able to save the precious time the oncologist/pathologist spends on studying the suspected tissue. They will be able to know whether a given tissue is malignant or not immediately, thereby allowing them to make further decisions on the treatments to be administered to get rid of the cancer at the early stage. 
 The following diagram gives a high-level overview of the machine learning process:
 ![ml pipeline](./unnamed2.jpg)
 
 ## Low Fidelity Mockups
 
-The following 3 screenshots are our low fidelity visualisations of our product. We showed this to the oncologist we interviewed. He was impressed by the simplicity of it. He mentioned that the functionalities visualised can be useful to pathologists. As of now, we are using hematoxylin and eosin stains for training the model such that it identfies metatstic tissue cells in them. He suggested that we try to generalise the model with other types of stained scans in the later stages of our product development. Also, he suggested that we talk to a pathologist to understand their specific needs they may require to ease the cancer detetction process even further.
+The following 3 screen shots are our low fidelity visualizations of our product. We showed this to the oncologist we interviewed. He was impressed by the simplicity of it. He mentioned that the functionalities visualized can be useful to pathologists. As of now, we are using hematoxylin and eosin stains for training the model such that it identifies metastatic tissue cells in them. He suggested that we try to generalize the model with other types of stained scans in the later stages of our product development. Also, he suggested that we talk to a pathologist to understand their specific needs they may require to ease the cancer detection process even further.
 
 ### Dashboard Page
  
@@ -39,27 +39,27 @@ The following 3 screenshots are our low fidelity visualisations of our product. 
 
 ### Doctors / Oncologists in Hospitals
 
-Doctors and Medical Oncologists from hospitals and cancer centers are our target customers. With metastatic cancer having a pretty low survival rate, the doctors will need more support in order to treat their patients thoroughly. With the use of our product, doctors could achieve significantly earlier detections of metatstic cancer. They would simply need to upload scan of the H&E stained image to our application and the output will be the risk score. That way, they can save time on studying the scans and immediately plan the treatment for their patients. By being able to embark on treatment early, there is a significiantly higher chance of curing the patient. That way the doctor can ensure that the patient does not go through the further hardships with cancer and his/her longevity.
-The doctor can also take H&E stained images in regular intervals and analyse them using our application to track the risk scores. Doctors will be able to understand the effect of their treatment on the cancer over time. To facilitiate this tracking process, a record is maintained for each patient in the application.
+Doctors and Medical Oncologists from hospitals and cancer centers are our target customers. With metastatic cancer having a pretty low survival rate, the doctors will need more support in order to treat their patients thoroughly. With the use of our product, doctors could achieve significantly earlier detections of metastatic cancer. They would simply need to upload scan of the H&E stained image to our application and the output will be the risk score. That way, they can save time on studying the scans and immediately plan the treatment for their patients. By being able to embark on treatment early, there is a significantly higher chance of curing the patient. That way the doctor can ensure that the patient does not go through the further hardships with cancer and his/her longevity.
+The doctor can also take H&E stained images in regular intervals and analyses them using our application to track the risk scores. Doctors will be able to understand the effect of their treatment on the cancer over time. To facilitate this tracking process, a record is maintained for each patient in the application.
 
 ### Metastatic Cancer patients
 
-The ultimate, though indirect, purpose of the app we will be building is to help patients detect the metatstic cancer they may have so as to start providing them treatment at an early stage.
+The ultimate, though indirect, purpose of the app we will be building is to help patients detect the metastatic cancer they may have so as to start providing them treatment at an early stage.
 The pathological report generated by the doctor using our application could help patients get some information regarding the cancer.
-On the other hand, the doctor, who is the targetted user, can immediately embark on the right direction of treatment based on the result output by our model. The patient can receive early stage treatment and has a significiatly higher chance of geeting cured. 
+On the other hand, the doctor, who is the targeted user, can immediately embark on the right direction of treatment based on the result output by our model. The patient can receive early stage treatment and has a significantly higher chance of getting cured. 
 
 
 ## User Research
 
     We have been able to interview a radiation oncologist only. We are trying to arrange a meeting with a breast cancer oncologist.
     
-We interviewed a radiation oncologist at the University Health Network. He is focused on using radiation treatment for gynecological cancer. Thus, he has aloe been incolved in studying tissue cells to identify cancer. Therefore, he was able to give us some solid advice with regards to our solutions and prototype. We presented our prototype to him and allowed him to navigate through the different features/pages. He was impressed by how straighforward our design was. He said that doctors require an abstracted layout just like we did, as some of them may not be tech-savvy to explore the app in detail. 
+We interviewed a radiation oncologist at the University Health Network. He is focused on using radiation treatment for gynecological cancer. Thus, he has aloe been involved in studying tissue cells to identify cancer. Therefore, he was able to give us some solid advice with regards to our solutions and prototype. We presented our prototype to him and allowed him to navigate through the different features/pages. He was impressed by how straightforward our design was. He said that doctors require an abstracted layout just like we did, as some of them may not be tech-savvy to explore the app in detail. 
 
 We had the following 2 tasks for him:
 - Upload a scan and view risk score
 - Navigate to report page then, edit if needed, if not submit it
 
-He was able to do both tasks within a few seconds. He suggested that we talk to metatstatic cancer specialists as well to know the exact sections of the pathological report required. He also suggested that we have a sharing feature within the application so that certain images or reports an be shared with colleagues for further advice.
+He was able to do both tasks within a few seconds. He suggested that we talk to metastatic cancer specialists as well to know the exact sections of the pathological report required. He also suggested that we have a sharing feature within the application so that certain images or reports an be shared with colleagues for further advice.
 
 ## Research Thoughts
 
