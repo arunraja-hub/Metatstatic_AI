@@ -7,7 +7,9 @@ Metastatic cancer is a type of cancer that can spread from part of the body to a
 
 It is estimated that 42,260 will die from breast cancer this year in the U.S. 90% of those deaths are caused by metastatic breast cancer. Only 25% of patients with metastatic breast cancer will survive in a 5-year period.
 
-    We are aiming to provide a platform to support doctors and oncologists effectively cure metastatic cancer at an early stage and prevent patients from reaching the stage where prolonging survivability is the only option.
+Thus, our problem is as follows (formulated in the form of an aim):
+
+    We are aiming to provide a platform to support doctors and oncologists effectively cure metastatic cancer at an early stage and prevent patients from reaching the later stages where prolonging survivability is the only option.
 
 ## Solution
 
@@ -17,7 +19,7 @@ The following diagram gives a high-level overview of the machine learning proces
 
 ## Low Fidelity Mockups
 
-The following 3 screenshots are our low fidelity visualisations of our product. We showed this to an oncologist we interviewed. He was impressed by the simplicity of it. He mentioned that the functionalities visaulised can be useful to pathologists. As of now, we are using hematoxylin and eosin stains for training the model such that it identfies metatstic tissue cells in them. He suggested that we try to generalise the model with other types of stained scans in the later stages of our product development. Also, he suggested that we talk to a pathologist to understand their specific needs they may require to ease the cancer detetction process even further.
+The following 3 screenshots are our low fidelity visualisations of our product. We showed this to the oncologist we interviewed. He was impressed by the simplicity of it. He mentioned that the functionalities visualised can be useful to pathologists. As of now, we are using hematoxylin and eosin stains for training the model such that it identfies metatstic tissue cells in them. He suggested that we try to generalise the model with other types of stained scans in the later stages of our product development. Also, he suggested that we talk to a pathologist to understand their specific needs they may require to ease the cancer detetction process even further.
 
 ### Dashboard Page
  
@@ -30,7 +32,7 @@ The following 3 screenshots are our low fidelity visualisations of our product. 
 ### Pathology Report Creation Page
 
  ![Dashboard](./Pathologist_Report.png)
- [1] “Image-Surgical Pathology Report, UHN.” https://www.researchgate.net/profile/Sylvia_Asa/publication/319357366/figure/fig2/AS:613886776573952@1523373421045/The-consolidated-theranostic-report-surgical-pathology-An-example-deidentified-to.png
+ [1]  "SampleSurgical Pathology Report, UHN" https://www.researchgate.net/profile/Sylvia_Asa/publication/319357366/figure/fig2/AS:613886776573952@1523373421045/The-consolidated-theranostic-report-surgical-pathology-An-example-deidentified-to.png
 
 
 ## User Persona
@@ -55,7 +57,7 @@ We interviewed a radiation oncologist at the University Health Network. He is fo
 
 We had the following 2 tasks for him:
 - Upload a scan and view risk score
-- Navigate to report page, then edit if needed, if not submit it
+- Navigate to report page then, edit if needed, if not submit it
 
 He was able to do both tasks within a few seconds. He suggested that we talk to metatstatic cancer specialists as well to know the exact sections of the pathological report required. He also suggested that we have a sharing feature within the application so that certain images or reports an be shared with colleagues for further advice.
 
@@ -63,15 +65,16 @@ He was able to do both tasks within a few seconds. He suggested that we talk to 
 
 Based on our first round of testing, the mockups have satisfied the oncologist we had tested it with. He can easily understand the design and is able to navigate through the app’s features without any help. 
 
-We have received constructive feedback from the testers on making certain improvements. We have distilled the following pointsfrom our conversation with the oncologist:
+We have received constructive feedback from the testers on making certain improvements. We have distilled the following points from our conversation with the oncologist:
 
-- Stick to the simple design in the lowfi prototype
+- Stick to the simple design in our lowfi prototype
 - Include specific sections required for the pathological report in the report creation feature by interviewing a pathologist
-- Add a sharing feature to easily share files with colleagues via the app
+- Add a sharing feature to easily share files/reports with colleagues via the app
 
-We hope to incorporate these changes gradually for our demo product. We will also be talking to more pathologists and oncologists and pilot testing the workable protytpe with them to gain a lot more feedback.
+We hope to incorporate these changes gradually for our demo product. We will also be talking to more pathologists and oncologists and pilot testing the workable prototype with them to gain a lot more feedback.
 
 ## Build Plan
+
 We have developed a complete Gantt chart which lays out the detailed schedule we will be following towards our final demo on November 28:
 
 ![gantt](./image00.jpg)
