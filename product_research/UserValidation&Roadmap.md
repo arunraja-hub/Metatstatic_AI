@@ -5,7 +5,7 @@ Surviving cancer once is as lucky as it gets. However, a vast majority of cancer
 
 Metastatic cancer is a type of cancer that can spread from part of the body to another. It is a fatal disease where past the early stage prolonging survival and maintaining the quality of life are the only options of treatments for metastatic cancer patients.
 
-It is estimated that 42,260 will die from breast cancer this year in the U.S. 90% of those deaths are caused by metastatic breast cancer. Only 25% of patients with metastatic breast cancer will survive in a 5-year period.
+It is estimated that 42,260 will die from breast cancer this year in the U.S. 90% of those deaths are caused by metastatic breast cancer. Only 25% of patients with metastatic breast cancer will survive in a 5-year period.[1]
 
 Thus, our problem is as follows (formulated in the form of an aim):
 
@@ -28,11 +28,12 @@ The following 3 screen shots are our low fidelity visualizations of our product.
 ### Image Analysis Page
 
  ![Dashboard](./Image_Analysis.png)
+ [2]
 
 ### Pathology Report Creation Page
 
  ![Dashboard](./Pathologist_Report.png)
- [1]  "SampleSurgical Pathology Report, UHN" https://www.researchgate.net/profile/Sylvia_Asa/publication/319357366/figure/fig2/AS:613886776573952@1523373421045/The-consolidated-theranostic-report-surgical-pathology-An-example-deidentified-to.png
+ [2]  
 
 
 ## User Persona
@@ -80,5 +81,12 @@ We have developed a complete Gantt chart which lays out the detailed schedule we
 ![gantt](./image00.jpg)
 
 We hope to follow our timeline as close as possible and achieve the milestones mentioned.
+
+## References
+[1]Tarver, Talicia. “Cancer Facts &amp; Figures 2012. American Cancer Society (ACS).” Journal of Consumer Health On the Internet, vol. 16, no. 3, 2012, pp. 366–367., doi:10.1080/15398285.2012.701177.
+
+[2] B. S. Veeling, J. Linmans, J. Winkens, T. Cohen, M. Welling. "Rotation Equivariant CNNs for Digital Pathology". arXiv:1806.03962 
+
+[3]  "Sample-Surgical Pathology Report, UHN" https://www.researchgate.net/profile/Sylvia_Asa/publication/319357366/figure/fig2/AS:613886776573952@1523373421045/The-consolidated-theranostic-report-surgical-pathology-An-example-deidentified-to.png
 
 
