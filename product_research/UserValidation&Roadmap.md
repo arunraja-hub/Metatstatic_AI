@@ -54,7 +54,7 @@ On the other hand, the doctor, who is the targeted user, can immediately embark 
 
 ## User Research
 
-    We have been able to interview a radiation oncologist only. We are trying to arrange a meeting with a breast cancer oncologist.
+    We have been able to interview a radiation oncologist only. We have arranged a meeting with a breast cancer oncologist in 2 weeks which is the earliest possible time for her
     
 We interviewed a radiation oncologist at the University Health Network. He is focused on using radiation treatment for gynecological cancer. Thus, he has aloe been involved in studying tissue cells to identify cancer. Therefore, he was able to give us some solid advice with regards to our solutions and prototype. We presented our prototype to him and allowed him to navigate through the different features/pages. He was impressed by how straightforward our design was. He said that doctors require an abstracted layout just like we did, as some of them may not be tech-savvy to explore the app in detail. 
 
