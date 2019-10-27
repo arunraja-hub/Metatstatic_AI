@@ -33,7 +33,7 @@ The following 3 screen shots are our low fidelity visualizations of our product.
 ### Pathology Report Creation Page
 
  ![Dashboard](./Pathologist_Report.png)
- [2]  
+ [3]  
 
 
 ## User Persona
