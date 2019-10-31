@@ -26,7 +26,7 @@ import Unarchive from "@material-ui/icons/Unarchive";
 import Language from "@material-ui/icons/Language";
 // core components/views for Admin layout
 import DashboardPage from "views/DoctorDashboard/DoctorDashboard.js";
-import UserProfile from "views/UserProfile/UserProfile.js";
+import PathologistReportPage from "views/PathologistReport/PathologistReport.js";
 import TableList from "views/TableList/TableList.js";
 import Typography from "views/Typography/Typography.js";
 import Icons from "views/Icons/Icons.js";
@@ -41,6 +41,22 @@ const dashboardRoutes = [
     component: DashboardPage,
     layout: "/admin"
   },
+  {
+    path: "/icons",
+    name: "Image Analysis",
+    rtlName: "الرموز",
+    icon: BubbleChart,
+    component: Icons,
+    layout: "/admin"
+  },
+  {
+    path: "/user",
+    name: "Pathologist Report",
+    rtlName: "الرموز",
+    icon: BubbleChart,
+    component: PathologistReportPage,
+    layout: "/admin"
+  }
   // {
   //   path: "/user",
   //   name: "User Profile",
@@ -63,14 +79,6 @@ const dashboardRoutes = [
   //   rtlName: "طباعة",
   //   icon: LibraryBooks,
   //   component: Typography,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/icons",
-  //   name: "Icons",
-  //   rtlName: "الرموز",
-  //   icon: BubbleChart,
-  //   component: Icons,
   //   layout: "/admin"
   // },
   // {
