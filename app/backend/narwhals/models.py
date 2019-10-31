@@ -12,6 +12,10 @@ class Doctor(models.Model):
 class Patient(models.Model):
     doctor = models.ForeignKey(Doctor,related_name='patients', on_delete=models.DO_NOTHING)
     name = models.CharField(max_length=120)
+    histologic_grade = models.IntegerField(default=0)
+    ml_prediction = models.FloatField(default=0.0)
+    pathology_report = models.TextField(default='HyperLink')
+    last_modified = models.DateField(auto_now=True, auto_now_add=False)
 
     def __str__(self):
         return self.name

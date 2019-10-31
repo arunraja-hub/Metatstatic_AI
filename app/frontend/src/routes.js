@@ -25,7 +25,7 @@ import Notifications from "@material-ui/icons/Notifications";
 import Unarchive from "@material-ui/icons/Unarchive";
 import Language from "@material-ui/icons/Language";
 // core components/views for Admin layout
-import DashboardPage from "views/Dashboard/Dashboard.js";
+import DashboardPage from "views/DoctorDashboard/DoctorDashboard.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import TableList from "views/TableList/TableList.js";
 import Typography from "views/Typography/Typography.js";
