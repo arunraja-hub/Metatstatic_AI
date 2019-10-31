@@ -18,7 +18,7 @@ export default function Icons() {
   const classes = useStyles();
   return (
     <GridContainer>
-      <GridItem xs={12} sm={12} md={12}>
+      {/* <GridItem xs={12} sm={12} md={12}>
         <Card plain>
           <CardHeader plain color="primary">
             <h4 className={classes.cardTitleWhite}>Material Design Icons</h4>
@@ -59,7 +59,7 @@ export default function Icons() {
             </Hidden>
           </CardBody>
         </Card>
-      </GridItem>
+      </GridItem> */}
     </GridContainer>
   );
 }

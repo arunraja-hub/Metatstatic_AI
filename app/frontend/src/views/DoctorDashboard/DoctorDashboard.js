@@ -5,86 +5,103 @@ import MUIDataTable from "mui-datatables";
 
 
 import styles from "assets/jss/material-dashboard-react/views/dashboardStyle.js";
-const axios = require('axios');
+const axios = require('axios').default;
 
-async function getPatient() {
-    try {
-      const response = await axios.get('/api/patientList');
-      console.log(response);
-      data = response.data;
-    } catch (error) {
-      console.error(error);
-    }
-}
+// async function getPatient() {
+//     try {
+//       const response = await fetch('http://127.0.0.1:8000/api/patientList');
+//       const myJson = await response.json();
+//       console.log(JSON.stringify(myJson));
+//       return JSON.parse(myJson);
+//     } catch (error) {
+//       console.error(error);
+//     }
+// }
 
 const useStyles = makeStyles(styles);
 
 
-const columns = ["Patient ID", "Patient Name", "Histologic Grade", "ML Prediction", "Pathology Report", "Upload Date"];
-
-    const data = [
-      ["Gabby George", "Business Analyst", "Minneapolis", 30, "$100,000"],
-      ["Aiden Lloyd", "Business Consultant", "Dallas", 55, "$200,000"],
-      ["Jaden Collins", "Attorney", "Santa Ana", 27, "$500,000"],
-      ["Franky Rees", "Business Analyst", "St. Petersburg", 22, "$50,000"],
-      ["Aaren Rose", "Business Consultant", "Toledo", 28, "$75,000"],
-      [
-        "Blake Duncan",
-        "Business Management Analyst",
-        "San Diego",
-        65,
-        "$94,000"
-      ],
-      ["Frankie Parry", "Agency Legal Counsel", "Jacksonville", 71, "$210,000"],
-      ["Lane Wilson", "Commercial Specialist", "Omaha", 19, "$65,000"],
-      ["Robin Duncan", "Business Analyst", "Los Angeles", 20, "$77,000"],
-      ["Mel Brooks", "Business Consultant", "Oklahoma City", 37, "$135,000"],
-      ["Harper White", "Attorney", "Pittsburgh", 52, "$420,000"],
-      ["Kris Humphrey", "Agency Legal Counsel", "Laredo", 30, "$150,000"],
-      ["Frankie Long", "Industrial Analyst", "Austin", 31, "$170,000"],
-      ["Brynn Robbins", "Business Analyst", "Norfolk", 22, "$90,000"],
-      ["Justice Mann", "Business Consultant", "Chicago", 24, "$133,000"],
-      [
-        "Addison Navarro",
-        "Business Management Analyst",
-        "New York",
-        50,
-        "$295,000"
-      ],
-      ["Jesse Welch", "Agency Legal Counsel", "Seattle", 28, "$200,000"],
-      ["Eli Mejia", "Commercial Specialist", "Long Beach", 65, "$400,000"],
-      ["Gene Leblanc", "Industrial Analyst", "Hartford", 34, "$110,000"],
-      ["Danny Leon", "Computer Scientist", "Newark", 60, "$220,000"],
-      ["Lane Lee", "Corporate Counselor", "Cincinnati", 52, "$180,000"],
-      ["Jesse Hall", "Business Analyst", "Baltimore", 44, "$99,000"],
-      ["Danni Hudson", "Agency Legal Counsel", "Tampa", 37, "$90,000"],
-      ["Terry Macdonald", "Commercial Specialist", "Miami", 39, "$140,000"],
-      ["Justice Mccarthy", "Attorney", "Tucson", 26, "$330,000"],
-      ["Silver Carey", "Computer Scientist", "Memphis", 47, "$250,000"],
-      ["Franky Miles", "Industrial Analyst", "Buffalo", 49, "$190,000"],
-      ["Glen Nixon", "Corporate Counselor", "Arlington", 44, "$80,000"],
-      [
-        "Gabby Strickland",
-        "Business Process Consultant",
-        "Scottsdale",
-        26,
-        "$45,000"
-      ],
-      ["Mason Ray", "Computer Scientist", "San Francisco", 39, "$142,000"]
-    ];
-
-    const options = {
-      filterType: "dropdown",
-      responsive: "scroll"
-    };
+const columns = [
+  {
+   name: "id",
+   label: "Patient ID",
+   options: {
+    filter: true,
+    sort: true,
+   }
+  },
+  {
+   name: "name",
+   label: "Patient Name",
+   options: {
+    filter: true,
+    sort: false,
+   }
+  },
+  {
+   name: "histologic_grade",
+   label: "Histologic Grade",
+   options: {
+    filter: true,
+    sort: true,
+   }
+  },
+  {
+   name: "ml_prediction",
+   label: "ML Prediction",
+   options: {
+    filter: true,
+    sort: true,
+   }
+  },
+  {
+    name: "pathology_report",
+    label: "Pathology Report",
+    options: {
+     filter: true,
+     sort: true,
+    }
+   },
+   {
+    name: "last_modified",
+    label: "Last Modified",
+    options: {
+     filter: true,
+     sort: true,
+    }
+   },
+ ];
+    
+const options = {
+  filterType: "dropdown",
+  responsive: "scroll"
+};
 
 export default function Dashboard() {
   const classes = useStyles();
-  getPatient();
+  //const data = getPatient();
+  const data = [
+    {
+        "id": 1,
+        "name": "Justin",
+        "histologic_grade": 0,
+        "ml_prediction": 0.0,
+        "pathology_report": "HyperLink",
+        "last_modified": "2019-10-31"
+    },
+    {
+        "id": 2,
+        "name": "Justin Ho",
+        "histologic_grade": 0,
+        "ml_prediction": 0.0,
+        "pathology_report": "HyperLink",
+        "last_modified": "2019-10-31"
+    }
+]
   return (
     <div>
     <MUIDataTable
-        title={"ACME Employee list"}
+        title={"Patient Record Table"}
         data={data}
         columns={columns}
         options={options}
