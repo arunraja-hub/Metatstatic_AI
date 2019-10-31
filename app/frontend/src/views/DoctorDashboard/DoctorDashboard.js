@@ -96,6 +96,30 @@ export default function Dashboard() {
         "ml_prediction": 0.0,
         "pathology_report": "HyperLink",
         "last_modified": "2019-10-31"
+    },
+    {
+        "id": 3,
+        "name": "Arun",
+        "histologic_grade": 1,
+        "ml_prediction": 90.5,
+        "pathology_report": "HyperLink",
+        "last_modified": "2019-10-31"
+    },
+    {
+        "id": 4,
+        "name": "Justin",
+        "histologic_grade": 2,
+        "ml_prediction": 10.5,
+        "pathology_report": "HyperLink",
+        "last_modified": "2019-10-31"
+    },
+    {
+        "id": 5,
+        "name": "a",
+        "histologic_grade": 1,
+        "ml_prediction": 50.0,
+        "pathology_report": "HyperLink",
+        "last_modified": "2019-10-31"
     }
 ]
   return (

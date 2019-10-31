@@ -16,7 +16,7 @@ import CardFooter from "components/Card/CardFooter.js";
 import avatar from "assets/img/faces/marc.jpg";
 
 function routeToPDF(){
-  window.open('./PathologistReport.pdf', '_blank', 'fullscreen=yes'); return false;
+  window.open('http://127.0.0.1:8000/static/PathologistReport.pdf', '_blank', 'fullscreen=yes'); return false;
 }
 
 const styles = {

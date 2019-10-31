@@ -56,14 +56,7 @@ const dashboardRoutes = [
     icon: BubbleChart,
     component: PathologistReportPage,
     layout: "/admin"
-  },
-  {
-    path: "/user",
-    name: "Pathologist Report",
-    rtlName: "الرموز",
-    component: PathologistReportPage,
-    layout: "/admin"
-  },
+  }
   // {
   //   path: "/user",
   //   name: "User Profile",
