@@ -7,16 +7,16 @@ import MUIDataTable from "mui-datatables";
 import styles from "assets/jss/material-dashboard-react/views/dashboardStyle.js";
 const axios = require('axios').default;
 
-// async function getPatient() {
-//     try {
-//       const response = await fetch('http://127.0.0.1:8000/api/patientList');
-//       const myJson = await response.json();
-//       console.log(JSON.stringify(myJson));
-//       return JSON.parse(myJson);
-//     } catch (error) {
-//       console.error(error);
-//     }
-// }
+async function getPatient() {
+    try {
+      const response = await fetch('http://127.0.0.1:8000/api/patientList');
+      const myJson = await response.json();
+      console.log(JSON.stringify(myJson));
+      return JSON.parse(myJson);
+    } catch (error) {
+      console.error(error);
+    }
+}
 
 const useStyles = makeStyles(styles);
 
