@@ -1,8 +1,8 @@
 {
-  "name": "material-dashboard-react",
+  "name": "metastatic.ai",
   "homepage": "https://github.com/creativetimofficial/material-dashboard-react",
   "authors": [
-    "creative-tim"
+    "Justin Lai"
   ],
   "description": "A Badass Material-UI Kit based on Material Design",
   "main": "public/index.html",
