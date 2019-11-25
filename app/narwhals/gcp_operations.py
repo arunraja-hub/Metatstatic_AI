@@ -1,7 +1,6 @@
 """Programatically interact with a Google Cloud Storage bucket."""
 from os import path
 from google.cloud import storage
-from config import bucketName, bucketFolder
 import sys
 
 
@@ -21,7 +20,7 @@ def upload_file(bucket_name, source_file):
 
 def download_subdir(bucket_name, subdir, localdir):
     "Download a file to the backend"
-    storage_client = storage.Client.from_service_account_json('gcp_creds.json')
+    storage_client = storage.Client.from_service_account_json('narwhals/gcp_creds.json')
     bucket = storage_client.get_bucket(bucket_name)
     blobs =  bucket.list_blobs(prefix=subdir)  # Get list of files
     for blob in blobs:

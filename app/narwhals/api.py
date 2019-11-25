@@ -1,5 +1,5 @@
 from .models import Patient, Doctor, PatientImage
-from rest_framework import viewsets, permissions
+from rest_framework import viewsets, permissions, generics, filters
 from .patientSerializer import PatientSerializer
 from .doctorSerializer import DoctorSerializer
 from .patientImageSerializer import PatientImageSerializer
@@ -8,6 +8,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.parsers import JSONParser
+from url_filter.integrations.drf import DjangoFilterBackend
+from .gcp_operations import download_subdir,upload_file
+
+gcp_bucket = "patients_image"
 
 class PatientViewSet(viewsets.ModelViewSet):
     queryset = Patient.objects.all()
@@ -23,23 +27,31 @@ class DoctorViewSet(viewsets.ModelViewSet):
     ]
     serializer_class = DoctorSerializer
 
-# class PatientImageViewSet(viewsets.ModelViewSet):
-#     queryset = PatientImage.objects.all()
-#     permissions_classes = [
-#         permissions.AllowAny
-#     ]
-#     serializer_class = PatientImageSerializer
+class PatientImageViewSet(viewsets.ModelViewSet):
+    queryset = PatientImage.objects.all()
+    permissions_classes = [
+        permissions.AllowAny
+    ]
+    serializer_class = PatientImageSerializer
+    filterset_fields = ['patient', 'imagefile']
 
-class PatientImageView(APIView):
+class GCPImage(APIView):
     """
-    List all patientsImages based on PatientID.
+    Retrieve, update or delete a Patient Image instance.
     """
     def get_object(self, pk):
         try:
             return Patient.objects.get(pk=pk)
-        except PatientImage.DoesNotExist:
+        except Patient.DoesNotExist:
             raise Http404
+
     def get(self, request, pk, format=None):
         patient = self.get_object(pk)
         serializer = PatientSerializer(patient)
-        return Response(serializer.data.get('patient_image'))
+        image_list = serializer.data.get('patient_image')
+        subdir = str(pk) + "/"
+        download_subdir(gcp_bucket, subdir, "narwhals/static/")
+        return Response(image_list)
+
+
+
