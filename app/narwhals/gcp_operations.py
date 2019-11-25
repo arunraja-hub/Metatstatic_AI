@@ -19,8 +19,13 @@ def upload_file(bucket_name, source_file):
         file_name,
         'narwhals'))
 
-if __name__ == "__main__":
-    first_arg = sys.argv[1]
-    second_arg = sys.argv[2]
-    upload_file(first_arg, second_arg)
+def download_subdir(bucket_name, subdir, localdir):
+    "Download a file to the backend"
+    storage_client = storage.Client.from_service_account_json('gcp_creds.json')
+    bucket = storage_client.get_bucket(bucket_name)
+    blobs =  bucket.list_blobs(prefix=subdir)  # Get list of files
+    for blob in blobs:
+        filename = blob.name.replace('/', '_') 
+        blob.download_to_filename(localdir + filename)  # Download
+
 

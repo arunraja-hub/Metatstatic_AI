@@ -3,6 +3,9 @@ from rest_framework import generics
 from .patientSerializer import PatientSerializer
 from .doctorSerializer import DoctorSerializer
 from .models import Doctor, Patient
+from rest_framework.decorators import api_view
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
 class DoctorList(generics.ListCreateAPIView):
     serializer_class = DoctorSerializer
@@ -19,6 +22,7 @@ class PatientList(generics.ListCreateAPIView):
 class PatientDetails(generics.RetrieveUpdateDestroyAPIView):
     queryset = Patient.objects.all()
     serializer_class = PatientSerializer
+
 
 
 

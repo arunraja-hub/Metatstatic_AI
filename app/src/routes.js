@@ -38,7 +38,7 @@ const dashboardRoutes = [
     name: "Dashboard",
     rtlName: "لوحة القيادة",
     icon: Dashboard,
-    component: DashboardPage,
+    component: TableList,
     layout: "/admin"
   },
   {

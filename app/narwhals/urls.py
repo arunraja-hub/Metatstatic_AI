@@ -1,12 +1,19 @@
 # todos/urls.py
 from django.urls import path
+from django.conf.urls import url
 from django.contrib import admin
+from rest_framework.urlpatterns import format_suffix_patterns
 
-from . import views
+from rest_framework import routers
+from .api import PatientViewSet, DoctorViewSet, PatientImageView
+
+router = routers.DefaultRouter()
+router.register('api/patients', PatientViewSet, 'patients')
+router.register('api/doctors', DoctorViewSet, 'doctors')
 
 urlpatterns = [
-    path('doctorList', views.DoctorList.as_view()),
-    path('patientList', views.PatientList.as_view()),
-    path('doctorDetails/<int:pk>/', views.DoctorDetails.as_view()),
-    path('patientDetails/<int:pk>/', views.PatientDetails.as_view())
+    path('api/patientImages/<int:pk>/', PatientImageView.as_view())
 ]
+
+urlpatterns += router.urls
+
