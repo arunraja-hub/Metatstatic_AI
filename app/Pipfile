@@ -35,6 +35,9 @@ django-rest-knox = "*"
 convertapi = "*"
 django-filter = "*"
 django-url-filter = "*"
+tensorflow = "*"
+keras = "*"
+pillow = "*"
 
 [requires]
 python_version = ">=3.7"
