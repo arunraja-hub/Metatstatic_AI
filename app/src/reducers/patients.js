@@ -1,18 +1,24 @@
-import { GET_PATIENTS} from "../actions/type.js";
-import { functionTypeAnnotation } from "@babel/types";
+import {GET_PATIENTS, DELETE_PATIENT, USER_LOGGED_OUT} from '../actions/index';
 
 const initialState = {
-    patients : []
-}
+    patients: []
+};
 
-export default function(state = initialState, action){
-    switch(action.type){
+export default function (state = initialState, action) {
+    switch (action.type) {
         case GET_PATIENTS:
-            return{
+            return {
                 ...state,
-                patients : action.payload
-            }
+                patients: action.payload
+            };
+        case DELETE_PATIENT:
+            return {
+                ...state,
+                patients: state.patients.filter(patient => patient.id !== action.payload)
+            };
+        case USER_LOGGED_OUT:
+            return null;
         default:
-            return state;
+            return initialState;
     }
 }

@@ -1,38 +1,28 @@
-/*!
+import './scss/style.css'
 
-=========================================================
-* Material Dashboard React - v1.8.0
-=========================================================
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunk from "redux-thunk";
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-react/blob/master/LICENSE.md)
+import reducers from './reducers';
+import App from './containers/App';
 
-* Coded by Creative Tim
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import React from "react";
-import ReactDOM from "react-dom";
-import { createBrowserHistory } from "history";
-import { Router, Route, Switch, Redirect } from "react-router-dom";
-
-// core components
-import Admin from "layouts/Admin.js";
-
-import "assets/css/material-dashboard-react.css?v=1.8.0";
-
-const hist = createBrowserHistory();
+const store = createStore(
+    reducers,
+    composeEnhancers(
+        applyMiddleware(
+            thunk
+        )
+    )
+);
 
 ReactDOM.render(
-  <Router history={hist}>
-    <Switch>
-      <Route path="/admin" component={Admin} />
-      <Redirect from="/" to="/admin/dashboard" />
-    </Switch>
-  </Router>,
-  document.getElementById("root")
-);
+    <Provider store={store}>
+        <App />
+    </Provider>, document.getElementById('root'));
+
+export default store;

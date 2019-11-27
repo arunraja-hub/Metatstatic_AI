@@ -10,6 +10,8 @@ from rest_framework import status
 from rest_framework.parsers import JSONParser
 from url_filter.integrations.drf import DjangoFilterBackend
 from .gcp_operations import download_subdir,upload_file
+from .tif_conversion import convertTifToJpg
+import os
 
 gcp_bucket = "patients_image"
 
@@ -50,7 +52,12 @@ class GCPImage(APIView):
         serializer = PatientSerializer(patient)
         image_list = serializer.data.get('patient_image')
         subdir = str(pk) + "/"
-        download_subdir(gcp_bucket, subdir, "narwhals/static/")
+        dl_localdir = "narwhals/static/media/" + subdir
+        os.makedirs(dl_localdir, exist_ok=True)
+        download_subdir(gcp_bucket, subdir, dl_localdir)
+        for image in image_list:
+            curFilePath = dl_localdir + str(pk) + '_'+ image.get('imagefile')
+            convertTifToJpg(curFilePath,dl_localdir)
         return Response(image_list)
 
 
