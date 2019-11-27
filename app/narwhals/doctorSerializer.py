@@ -3,7 +3,7 @@ from .models import Doctor, Patient, PatientImage
 from .patientSerializer import PatientSerializer
 
 class DoctorSerializer(serializers.ModelSerializer):
-    patients = PatientSerializer(many=True,read_only=True)
+    patients = PatientSerializer(many=True, read_only=False)
     class Meta:
         model = Doctor
         fields = ['id','name', 'title', 'patients']

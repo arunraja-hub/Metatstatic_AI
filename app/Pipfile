@@ -31,6 +31,13 @@ six = ">=1.12.0"
 sqlparse = ">=0.3.0"
 urllib3 = ">=1.25.6"
 whitenoise = ">=4.1.4"
+django-rest-knox = "*"
+convertapi = "*"
+django-filter = "*"
+django-url-filter = "*"
+tensorflow = "*"
+keras = "*"
+pillow = "*"
 
 [requires]
 python_version = ">=3.7"
