@@ -25,7 +25,7 @@ class Login extends Component {
                 <Card className="text-white bg-primary py-5 d-md-down-none" style={{ width: 44 + '%' }}>
                   <CardBody className="text-center">
                     <div>
-                    <img src={logo} class="img-fluid" alt="Responsive image"></img>
+                    <img src={logo} alt="Responsive image" class="img-fluid" ></img>
                     </div>
                   </CardBody>
                 </Card>

@@ -52,7 +52,7 @@ export const getPatients = (props) => (dispatch, getState) => {
 export const deletePatient = (id) => {
     return (dispatch, getState) => {
         axios
-            .delete("/api/patients/${id}/")
+            .delete("/api/patients/" + id + "/")
             .then(res => {
                 dispatch({
                     type: DELETE_PATIENT,
