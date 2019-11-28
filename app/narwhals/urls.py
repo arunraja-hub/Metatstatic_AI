@@ -14,8 +14,12 @@ router.register('api/doctors', DoctorViewSet, 'doctors')
 # router.register('api/patientsImages', PatientImageViewSet, 'patientsImages')
 router.register('api/pathologyScan', PathologyImageScanView, 'pathologyScan')
 
+def trigger_error(request):
+    division_by_zero = 1 / 0
+
 urlpatterns = [
      path('api/gcpImages/<int:pk>/', GCPImage.as_view()),
+     path('sentry-debug/', trigger_error),
      # path('api/pathologyScan/<int:pk>/', PathologyImageScanView.as_view()),
 ]
 
