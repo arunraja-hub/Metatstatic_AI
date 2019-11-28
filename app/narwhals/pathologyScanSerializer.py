@@ -15,15 +15,21 @@ class PathologyScanSerializer(serializers.ModelSerializer):
         fields = ['id','name','pathology_Main_Img','patient','ml_prediction','jpg_file','last_modified']
 
     def get_jpg_file(self, obj):
-        srcFile = obj.pathology_Main_Img.path
-        filename = obj.pathology_Main_Img.name.replace('.tif', '.jpg')
-        destDir = '/media/jpg_images/'
-        if not os.path.exists(destDir):
-            os.makedirs(destDir)
-        convertTifToJpg(srcFile, destDir)
-        return destDir+filename
+        if obj.jpg_file is None:
+            srcFile = obj.pathology_Main_Img.path
+            filename = os.path.basename(srcFile)
+            filename = filename.replace('.tif', '.jpg')
+            destDir = '../jpg_images/'
+            if not os.path.exists(destDir):
+                os.makedirs(destDir)
+            convertTifToJpg(srcFile, destDir)
+            jpgPath = obj.pathology_Main_Img.url.replace('.tif', '.jpg').replace('images', 'jpg_images')
+            return jpgPath
+        return obj.jpg_file
 
     def get_ml_prediction(self, obj):
-        srcFile = obj.pathology_Main_Img.path
-        ml_score = NarwhalsConfig.predictor.predict(srcFile) * 100
-        return ml_score
+        if obj.ml_prediction == 0.0:
+            srcFile = obj.pathology_Main_Img.path
+            ml_score = NarwhalsConfig.predictor.predict(srcFile) * 100
+            return ml_score
+        return obj.ml_prediction

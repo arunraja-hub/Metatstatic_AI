@@ -17,7 +17,7 @@ router.register('api/pathologyScan', PathologyImageScanView, 'pathologyScan')
 urlpatterns = [
      path('api/gcpImages/<int:pk>/', GCPImage.as_view()),
      # path('api/pathologyScan/<int:pk>/', PathologyImageScanView.as_view()),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
 
 urlpatterns += router.urls
 
