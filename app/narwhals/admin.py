@@ -6,6 +6,6 @@ from .models import *
 
 admin.site.register(Doctor)
 admin.site.register(Patient)
-admin.site.register(PatientImage)
+# admin.site.register(PatientImage)
 admin.site.register(PathologyScan)
 

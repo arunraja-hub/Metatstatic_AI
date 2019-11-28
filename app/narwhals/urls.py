@@ -11,7 +11,7 @@ from .api import *
 router = routers.DefaultRouter()
 router.register('api/patients', PatientViewSet, 'patients')
 router.register('api/doctors', DoctorViewSet, 'doctors')
-router.register('api/patientsImages', PatientImageViewSet, 'patientsImages')
+# router.register('api/patientsImages', PatientImageViewSet, 'patientsImages')
 router.register('api/pathologyScan', PathologyImageScanView, 'pathologyScan')
 
 urlpatterns = [

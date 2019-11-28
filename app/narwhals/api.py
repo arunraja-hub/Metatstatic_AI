@@ -2,7 +2,6 @@ from .models import *
 from rest_framework import viewsets, permissions, generics, filters
 from .patientSerializer import PatientSerializer
 from .doctorSerializer import DoctorSerializer
-from .patientImageSerializer import PatientImageSerializer
 from .pathologyScanSerializer import PathologyScanSerializer
 from rest_framework.parsers import MultiPartParser, FormParser
 from django.http import Http404, HttpResponse 
@@ -32,13 +31,13 @@ class DoctorViewSet(viewsets.ModelViewSet):
     ]
     serializer_class = DoctorSerializer
 
-class PatientImageViewSet(viewsets.ModelViewSet):
-    queryset = PatientImage.objects.all()
-    permissions_classes = [
-        permissions.AllowAny
-    ]
-    serializer_class = PatientImageSerializer
-    filterset_fields = ['patient', 'imagefile']
+# class PatientImageViewSet(viewsets.ModelViewSet):
+#     queryset = PatientImage.objects.all()
+#     permissions_classes = [
+#         permissions.AllowAny
+#     ]
+#     serializer_class = PatientImageSerializer
+#     filterset_fields = ['patient', 'imagefile']
 
 class GCPImage(APIView):
     """

@@ -21,14 +21,14 @@ class Patient(models.Model):
         return self.name
 
 
-class PatientImage(models.Model):
-    patient = models.ForeignKey(Patient,related_name='patient_image',on_delete=models.DO_NOTHING, blank=True, null=True)
-    imagefile = models.ImageField(upload_to='images/')
-    ml_prediction = models.FloatField(default=0.0)
-    serverFilePath = models.CharField(max_length=100, blank=True, null=True)
-    last_modified = models.DateField(auto_now=True, auto_now_add=False)
-    def __str__(self):
-        return self.imagefile
+# class PatientImage(models.Model):
+#     patient = models.ForeignKey(Patient,related_name='patient_image',on_delete=models.DO_NOTHING, blank=True, null=True)
+#     imagefile = models.ImageField(upload_to='images/')
+#     ml_prediction = models.FloatField(default=0.0)
+#     serverFilePath = models.CharField(max_length=100, blank=True, null=True)
+#     last_modified = models.DateField(auto_now=True, auto_now_add=False)
+#     def __str__(self):
+#         return self.imagefile
 
 class PathologyScan(models.Model):
     name = models.CharField(max_length=100)
