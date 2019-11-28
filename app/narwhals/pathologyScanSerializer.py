@@ -19,11 +19,11 @@ class PathologyScanSerializer(serializers.ModelSerializer):
             srcFile = obj.pathology_Main_Img.path
             filename = os.path.basename(srcFile)
             filename = filename.replace('.tif', '.jpg')
-            destDir = '../jpg_images/'
+            destDir = 'build/media/images/'
             if not os.path.exists(destDir):
                 os.makedirs(destDir)
             convertTifToJpg(srcFile, destDir)
-            jpgPath = obj.pathology_Main_Img.url.replace('.tif', '.jpg').replace('images', 'jpg_images')
+            jpgPath = obj.pathology_Main_Img.url.replace('.tif', '.jpg')
             return jpgPath
         return obj.jpg_file
 

@@ -36,7 +36,6 @@ convertapi = "*"
 django-filter = "*"
 django-url-filter = "*"
 opencv-python-headless = "*"
-tensorflow="*"
 
 [requires]
 python_version = ">=3.7"
