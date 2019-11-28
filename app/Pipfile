@@ -36,6 +36,7 @@ convertapi = "*"
 django-filter = "*"
 django-url-filter = "*"
 opencv-python-headless = "*"
+tensorflow = {file = "https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.9.0-py3-none-any.whl"}
 
 [requires]
 python_version = ">=3.7"
