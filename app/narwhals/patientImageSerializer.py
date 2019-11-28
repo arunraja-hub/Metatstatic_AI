@@ -4,4 +4,4 @@ from .models import Doctor, Patient, PatientImage
 class PatientImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = PatientImage
-        fields = ['id','patient','imagefile','ml_prediction','last_modified']
+        fields = ['id','patient','imagefile','ml_prediction','serverFilePath','last_modified']
