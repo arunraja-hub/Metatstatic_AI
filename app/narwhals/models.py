@@ -10,7 +10,7 @@ class Doctor(models.Model):
         return self.name
 
 class Patient(models.Model):
-    doctor = models.ForeignKey(Doctor,related_name='patients', on_delete=models.DO_NOTHING)
+    doctor = models.ForeignKey(Doctor,related_name='patients', on_delete=models.DO_NOTHING, blank=True, null=True)
     name = models.CharField(max_length=120)
     histologic_grade = models.IntegerField(default=0)
     ml_prediction = models.FloatField(default=0.0)
@@ -22,7 +22,7 @@ class Patient(models.Model):
 
 
 class PatientImage(models.Model):
-    patient = models.ForeignKey(Patient,related_name='patient_image',on_delete=models.CASCADE)
+    patient = models.ForeignKey(Patient,related_name='patient_image',on_delete=models.CASCADE, blank=True, null=True)
     imagefile = models.CharField(max_length=500)
     ml_prediction = models.FloatField(default=0.0)
     last_modified = models.DateField(auto_now=True, auto_now_add=False)
