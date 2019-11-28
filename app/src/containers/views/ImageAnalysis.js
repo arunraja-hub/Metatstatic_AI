@@ -13,7 +13,7 @@ import FilePondPluginImagePreview from "filepond-plugin-image-preview";
 import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
 import Gallery from 'react-grid-gallery';
 
-import p1Image1 from "../../assets/patientImages/1/1.jpg";
+import p1Image1 from "/media/jpg_images/images/1_Gw2UH6J.jpg";
 import p1Image2 from "../../assets/patientImages/1/2.jpg";
 import p1Image3 from "../../assets/patientImages/1/3.jpg";
 import p2Image1 from "../../assets/patientImages/2/4.jpg";
@@ -59,12 +59,12 @@ class ImageAnalysis extends Component {
                     files={this.state.files}
                     allowMultiple={true}
                     maxFiles={3}
-                    server="/api"
+                    server="/api/pathologyScanUpload"
                     oninit={() => this.handleInit()}
                         onupdatefiles={fileItems => {
                         // Set currently active file objects to this.state
                         this.setState({
-                        files: fileItems.map(fileItem => fileItem.file)
+                            files: fileItems.map(fileItem => fileItem.file)
                         });
                     }}
                 />
