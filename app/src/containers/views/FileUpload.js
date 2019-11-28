@@ -34,7 +34,7 @@ const FileUpload = () => {
         //const res = await axios.post('http://127.0.0.1:8000/api/pathologyScan/', formData, {
         const res = await axios.post('api/pathologyScan/', formData, {
           headers: {
-            'Content-Type': 'multipart/form-data'
+            'Content-Type': 'multipart/form-data boundary=${data._boundary}'
           },
           onUploadProgress: progressEvent => {
             setUploadPercentage(
