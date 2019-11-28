@@ -1,0 +1,150 @@
+C:\Users\LAI\Desktop\Narwhals>heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/browser/34494210-2f5f-4aae-9f77-6773f99e810c
+Logging in... done
+Logged in as justinholam.lai@mail.utoronto.ca
+
+C:\Users\LAI\Desktop\Narwhals>git add .
+
+C:\Users\LAI\Desktop\Narwhals>git commit "Fix Django Backend"
+error: pathspec 'Fix Django Backend' did not match any file(s) known to git.
+
+C:\Users\LAI\Desktop\Narwhals>git commit -m "Fix Django Backend"
+On branch development
+Your branch is up to date with 'origin/development'.
+
+nothing to commit, working tree clean
+
+C:\Users\LAI\Desktop\Narwhals>git subtree push --prefix app heroku master
+git push using:  heroku master                                                                                          Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.69 KiB | 863.00 KiB/s, done.
+Total 10 (delta 8), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Node.js app detected
+remote:
+remote: -----> Creating runtime environment
+remote:
+remote:        NPM_CONFIG_LOGLEVEL=error
+remote:        NODE_ENV=production
+remote:        NODE_MODULES_CACHE=true
+remote:        NODE_VERBOSE=false
+remote:
+remote: -----> Installing binaries
+remote:        engines.node (package.json):  unspecified
+remote:        engines.npm (package.json):   unspecified (use default)
+remote:
+remote:        Resolving node version 12.x...
+remote:        Downloading and installing node 12.13.1...
+remote:        Using default npm version: 6.12.1
+remote:
+remote: -----> Restoring cache
+remote:        - node_modules
+remote:
+remote: -----> Installing dependencies
+remote:        Installing node modules (package.json + package-lock)
+remote:        audited 908059 packages in 13.896s
+remote:        found 0 vulnerabilities
+remote:
+remote:
+remote: -----> Build
+remote:        Running build
+remote:
+remote:        > react-redux-coreui-boilerplate@0.0.1 build /tmp/build_bcdde19b086f6e1c2128499cb0c4991e
+remote:        > npm-run-all build-css build-js
+remote:
+remote:
+remote:        > react-redux-coreui-boilerplate@0.0.1 build-css /tmp/build_bcdde19b086f6e1c2128499cb0c4991e
+remote:        > node-sass-chokidar --include-path ./node_modules ./src/scss -o ./src/scss
+remote:
+remote:        Rendering Complete, saving .css file...
+remote:        Wrote CSS to /tmp/build_bcdde19b086f6e1c2128499cb0c4991e/src/scss/style.css
+remote: Wrote 1 CSS files to /tmp/build_bcdde19b086f6e1c2128499cb0c4991e/src/scss
+remote:
+remote:        > react-redux-coreui-boilerplate@0.0.1 build-js /tmp/build_bcdde19b086f6e1c2128499cb0c4991e
+remote:        > react-scripts build
+remote:
+remote:        Creating an optimized production build...
+remote:        Compiled with warnings.
+remote:
+remote:        ./src/containers/Login.js
+remote:          Line 28:21:  Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt
+remote:
+remote:        ./src/containers/views/Dashboard.js
+remote:          Line 3:10:  'bindActionCreators' is defined but never used  no-unused-vars
+remote:          Line 5:10:  'Card' is defined but never used                no-unused-vars
+remote:          Line 5:16:  'CardBody' is defined but never used            no-unused-vars
+remote:          Line 5:26:  'CardGroup' is defined but never used           no-unused-vars
+remote:          Line 5:37:  'Col' is defined but never used                 no-unused-vars
+remote:          Line 5:42:  'Container' is defined but never used           no-unused-vars
+remote:          Line 5:53:  'Row' is defined but never used                 no-unused-vars
+remote:
+remote:        Search for the keywords to learn more about each warning.
+remote:        To ignore, add // eslint-disable-next-line to the line before.
+remote:
+remote:        File sizes after gzip:
+remote:
+remote:          121.67 KB  build/static/js/3.525dc4a4.chunk.js
+remote:          45.59 KB   build/static/css/main.a6cc827c.chunk.css
+remote:          38.04 KB   build/static/js/0.cebde12d.chunk.js
+remote:          3.59 KB    build/static/js/main.1b9942e1.chunk.js
+remote:          3.47 KB    build/static/css/0.a16bbb05.chunk.css
+remote:          1.54 KB    build/static/js/runtime-main.0ede3e9c.js
+remote:          687 B      build/static/js/4.082abc75.chunk.js
+remote:          608 B      build/static/js/5.836ffc5e.chunk.js
+remote:          608 B      build/static/js/6.f73ae691.chunk.js
+remote:          563 B      build/static/css/3.fa4a79a6.chunk.css
+remote:          360 B      build/static/js/7.0d683860.chunk.js
+remote:
+remote:        The project was built assuming it is hosted at the server root.
+remote:        You can control this with the homepage field in your package.json.
+remote:        For example, add this to build it for GitHub Pages:
+remote:
+remote:          "homepage" : "http://myname.github.io/myapp",
+remote:
+remote:        The build folder is ready to be deployed.
+remote:        You may serve it with a static server:
+remote:
+remote:          npm install -g serve
+remote:          serve -s build
+remote:
+remote:        Find out more about deployment here:
+remote:
+remote:          https://bit.ly/CRA-deploy
+remote:
+remote:
+remote: -----> Pruning devDependencies
+remote:        audited 908059 packages in 12.168s
+remote:        found 0 vulnerabilities
+remote:
+remote:
+remote: -----> Caching build
+remote:        - node_modules
+remote:
+remote: -----> Build succeeded!
+remote: -----> Python app detected
+remote:        Skipping installation, as Pipfile.lock hasn't changed since last deploy.
+remote: -----> Discovering process types
+remote:        Procfile declares types -> release, web
+remote:
+remote: -----> Compressing...
+remote:        Done: 158.1M
+remote: -----> Launching...
+remote:  !     Release command declared: this new release will not be available until the command succeeds.
+remote:        Released v13
+remote:        https://metastatic-ai.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+remote: Running release command...
+remote:
+remote: Operations to perform:
+remote:   Apply all migrations: admin, auth, contenttypes, narwhals, sessions
+remote: Running migrations:
+remote:   Applying narwhals.0004_auto_20191127_1932... OK
+remote:   Applying narwhals.0005_auto_20191127_1934... OK
+To https://git.heroku.com/metastatic-ai.git
+   cabe9fd..d238f50  d238f5030db8500cb5a5acec741b1efbcd24a7dd -> master
