@@ -1,12 +1,14 @@
-import tensorflow
-from tensorflow import keras
-from keras.preprocessing.image import ImageDataGenerator
-from keras.models import load_model
-import cv2
-import os
-import shutil
+
 
 def cnn_predict(srcfile):
+
+    import tensorflow
+    from tensorflow import keras
+    from keras.preprocessing.image import ImageDataGenerator
+    from keras.models import load_model
+    import cv2
+    import os
+    import shutil
     #Return a Percentage of Getting the Cancer
 
 #srcfile = "C:\\Users\\LAI\\Desktop\\Narwhals\\app\\narwhals\\12.tif"
@@ -26,8 +28,8 @@ def cnn_predict(srcfile):
     shutil.copyfile(srcfile, destfile)
 
     datagen = ImageDataGenerator(rescale=1.0/255)
-    model = tensorflow.keras.models.load_model('../ML_model/final_model.h5')
-    model.load_weights('../ML_model/final_model_weights.h5')
+    model = tensorflow.keras.models.load_model('./static/final_model.h5')
+    model.load_weights('./static/final_model_weights.h5')
     pred_gen = datagen.flow_from_directory(dataFlowDir,
                                             #Our Testing Data from Kaggle 96 x 96
                                             target_size=(96,96),

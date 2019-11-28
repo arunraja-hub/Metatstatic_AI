@@ -2,10 +2,13 @@ from rest_framework import serializers
 from .models import *
 from .tif_conversion import *
 import os
+from .run_prediction import *
+from .apps import NarwhalsConfig
 
 class PathologyScanSerializer(serializers.ModelSerializer):
 
     jpg_file = serializers.SerializerMethodField('get_jpg_file')
+    ml_prediction = serializers.SerializerMethodField('get_ml_prediction')
 
     class Meta:
         model = PathologyScan
@@ -19,3 +22,8 @@ class PathologyScanSerializer(serializers.ModelSerializer):
             os.makedirs(destDir)
         convertTifToJpg(srcFile, destDir)
         return destDir+filename
+
+    def get_ml_prediction(self, obj):
+        srcFile = obj.pathology_Main_Img.path
+        ml_score = NarwhalsConfig.predictor.predict(srcFile) * 100
+        return ml_score
