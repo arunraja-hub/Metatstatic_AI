@@ -48,17 +48,21 @@ Run the following development detup script:
 
 #### Logging Setup
 
- ![LogDNA](./logDNA.png)
+ ![LogDNA](./logDNA.jpg)
 
 #### Exception Tracking Setup
 
- ![Sentry](./Sentry.png)
+ ![Sentry](./Sentry.jpg)
 
 #### Github CI Actions
- ![GithubCI](./GithubCI.png)
+ ![GithubCI](./GithubCI.jpg)
 
 #### Database
- ![Database](./Database.png)
+ ![Database](./Database.jpg)
+ 
+ #### Service Yaml 
+ 
+ https://github.com/dcsil/Narwhals/blob/master/app/service.yml
 
 
 ## User Persona
