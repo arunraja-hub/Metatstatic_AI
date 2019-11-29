@@ -47,6 +47,9 @@ Run the following development detup script:
 ### Web app
 
  Visit our web app here: https://narwhals-ai.herokuapp.com/
+ 
+ Use Sample Images from this link to test our ML Image Anaysis Features:
+ https://github.com/dcsil/Narwhals/tree/master/app/images
 
 ### Production
 
