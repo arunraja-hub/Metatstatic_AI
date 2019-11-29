@@ -29,7 +29,7 @@ The following diagram gives a high-level overview of the machine learning proces
 
 ### Architecture
  
- ![Dashboard](./archi.jpg)
+ ![Dashboard](./architecture.jpg)
  
 
 ### Setup script
