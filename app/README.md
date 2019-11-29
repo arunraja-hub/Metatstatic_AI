@@ -35,6 +35,8 @@ The following diagram gives a high-level overview of the machine learning proces
 
 Run the following development detup script:
     ../src/bootstrap.ps1
+   
+    https://github.com/dcsil/Narwhals/blob/master/src/boostrap.ps1
     
 
 
