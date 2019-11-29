@@ -1,62 +1,64 @@
 import React, { Component } from 'react';
-// Import React FilePond
-import { FilePond, registerPlugin } from "react-filepond";
-
-// Import FilePond styles
-import "filepond/dist/filepond.min.css";
-
-// Import the Image EXIF Orientation and Image Preview plugins
-// Note: These need to be installed separately
-import FilePondPluginImageExifOrientation from "filepond-plugin-image-exif-orientation";
-import FilePondPluginImagePreview from "filepond-plugin-image-preview";
-import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
-
-// Register the plugins
-registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
+import axios from 'axios';
 
 
 class Page1 extends Component {
 
-    constructor(props) {
-        super(props);
-    
-        this.state = {
-          // Set initial files, type 'local' means this is a file
-          // that has already been uploaded to the server (see docs)
-          files: [
-            {
-              source: "index.html",
-              options: {
-                type: "local"
-              }
-            }
-          ]
-        };
+  state = {
+    title: '',
+    content: '',
+    image: null
+  };
+
+  handleChange = (e) => {
+    this.setState({
+      [e.target.id]: e.target.value
+    })
+  };
+
+  handleImageChange = (e) => {
+    this.setState({
+      image: e.target.files[0]
+    })
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state);
+    let form_data = new FormData();
+    form_data.append('pathology_Main_Img', this.state.image, this.state.image.name);
+    form_data.append('name', this.state.name);
+    let url = 'http://localhost:8000/api/pathologyScan/';
+    axios.post(url, form_data, {
+      headers: {
+        'content-type': 'multipart/form-data'
       }
+    })
+        .then(res => {
+          console.log(res.data);
+        })
+        .catch(err => console.log(err))
+  };
     
-      handleInit() {
-        console.log("FilePond instance has initialised", this.pond);
-      }
 
 
     render() {
         return (
             <div className="animated fadeIn">
-                {/* Pass FilePond properties as attributes */}
-                <FilePond
-                    ref={ref => (this.pond = ref)}
-                    files={this.state.files}
-                    allowMultiple={true}
-                    maxFiles={3}
-                    server="/api"
-                    oninit={() => this.handleInit()}
-                        onupdatefiles={fileItems => {
-                        // Set currently active file objects to this.state
-                        this.setState({
-                        files: fileItems.map(fileItem => fileItem.file)
-                        });
-                    }}
-                />
+                <form onSubmit={this.handleSubmit}>
+                  <p>
+                    <input type="text" placeholder='Title' id='title' value={this.state.title} onChange={this.handleChange} required/>
+                  </p>
+                  <p>
+                    <input type="text" placeholder='Content' id='content' value={this.state.content} onChange={this.handleChange} required/>
+                  </p>
+                  <p>
+                    <input type="file"
+                          id="image"
+                          accept="image/png, image/jpeg"  onChange={this.handleImageChange} required/>
+                  </p>
+                    <input type="submit"/>
+                 </form>
             </div>
         );
     }

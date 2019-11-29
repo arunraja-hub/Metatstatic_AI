@@ -5,6 +5,9 @@ export const USER_LOGGED_IN = "USER_LOGGED_IN";
 export const USER_LOGGED_OUT = "USER_LOGGED_OUT";
 export const GET_PATIENTS = "GET_PATIENTS";
 export const DELETE_PATIENT = "DELETE_PATIENT";
+export const GET_PATHOLOGYIMAGES = "GET_PATHOLOGYIMAGES";
+const LOAD_IMAGES = 'LOAD_IMAGES';
+const SELECT_IMAGE = 'SELECT_IMAGE';
 
 export const someAction = (props) => {
     return (dispatch, getState) => {
@@ -63,3 +66,32 @@ export const deletePatient = (id) => {
             .catch(err => toastr.error('Error', 'Failed to Delete Patient'));
     };
 };
+
+//GET PATHOLOGYIMAGES
+export const getPathologyImages = (props) => (dispatch, getState) => {
+    axios
+        .get("http://localhost:8000//api/pathologyScan/")
+        //.get("/api/pathologyScan/")
+        .then(res => {
+            console.log(res.data);
+            dispatch({
+                type: GET_PATHOLOGYIMAGES,
+                payload: res.data
+            });
+            // toastr.success('Success', 'Retrieved Patients Data');
+        })
+        .catch(err => toastr.error('Error', 'Failed to Retrieve Patients'));
+};
+
+export function selectImage(image) {
+    return {
+      type: SELECT_IMAGE,
+      image
+    }
+  }
+  
+  export function loadImages() {
+    return {
+      type: LOAD_IMAGES
+    }
+  }

@@ -23,7 +23,12 @@ const Page1 = Loadable({
 });
 
 const Page2 = Loadable({
-  loader: () => import('../containers/views/Page2'),
+  loader: () => import('../containers/views/ImageAnalysis'),
+  loading: Loading,
+});
+
+const ImageGallery = Loadable({
+  loader: () => import('../containers/views/ImageAnalysis'),
   loading: Loading,
 });
 
@@ -31,6 +36,7 @@ const routes = [
   { path: '/', name: '', component: Home, exact: true },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/ImageAnalysis', name: 'Image Analysis', component: ImageAnalysis },
+  { path: '/ImageGallery', name: 'Image Analysis', component: ImageGallery },
   { path: '/page1', name: 'Page1', component: Page1 },
   { path: '/page2', name: 'Page2', component: Page2 }
 ];

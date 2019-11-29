@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import django_heroku
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,6 +27,10 @@ SECRET_KEY = 'k83sj#alu2=hgn=-b#x1=qu184169z*u#=2opc)kt*t%@!a=!2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+sentry_sdk.init(
+    dsn="https://ed387775fbef4ab89958ea68b1bddc23@sentry.io/1838084",
+    integrations=[DjangoIntegration()]
+)
 
 ALLOWED_HOSTS = []
 
@@ -145,7 +151,9 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
-    'http://127.0.0.1:3000'
+    'http://127.0.0.1:3000',
+    'http://127.0.0.1:8000',
+    'http://localhost:8000'
 ]
 
 # Configure app for Heroku deployment

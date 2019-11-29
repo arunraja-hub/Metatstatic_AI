@@ -5,6 +5,7 @@ import { reducer as toastr } from 'react-redux-toastr';
 import user from "./user";
 import somedata from "./somedata";
 import patients from "./patients";
+import pathologyImages from "./pathologyImages";
 
 const rootReducer = combineReducers({
     user,
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
     form,
     toastr,
     patients,
+    pathologyImages,
 });
 
 export default rootReducer;

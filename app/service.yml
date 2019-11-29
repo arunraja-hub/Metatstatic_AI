@@ -1,0 +1,17 @@
+tools:
+  exceptions: https://sentry.io/organizations/narwhals-ai-fv/issues/1362227520/?project=1838084&query=is%3Aunresolved
+  logging: https://app.logdna.com/dd2287fc46/logs/view
+  ci: https://github.com/dcsil/Narwhals/actions
+
+services:
+  production: https://narwhals-ai.herokuapp.com/
+
+docs:
+  getting_started: https://github.com/dcsil/Narwhals/blob/master/app/README.md
+  
+commands:
+  bootstrap: app/bootstrap.ps1
+  database:
+    create: python manage.py makemigrations
+    migrate: python manage.py migrate
+  server: python manage.py runserver

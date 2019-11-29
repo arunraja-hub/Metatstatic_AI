@@ -7,11 +7,12 @@ import { Card, CardBody, CardGroup, Col, Container, Row } from 'reactstrap';
 import { getPatients, deletePatient } from '../../actions/index';
 
 class Dashboard extends Component {
-    static propTypes = {
-        patients: PropTypes.array.isRequired,
-        getPatients: PropTypes.func.isRequired,
-        deletePatient: PropTypes.func.isRequired,
-    };
+
+    // static propTypes = {
+    //     patients: PropTypes.array.isRequired,
+    //     getPatients: PropTypes.func.isRequired,
+    //     deletePatient: PropTypes.func.isRequired,
+    // };
 
     componentDidMount() {
         this.props.getPatients();
@@ -60,6 +61,12 @@ class Dashboard extends Component {
         );
     }
 }
+
+Dashboard.propTypes = {
+    patients: PropTypes.array.isRequired,
+    getPatients: PropTypes.func.isRequired,
+    deletePatient: PropTypes.func.isRequired,
+};
 
 
 

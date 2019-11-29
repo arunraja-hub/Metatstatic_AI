@@ -1,9 +1,10 @@
-from .models import Patient, Doctor, PatientImage
+from .models import *
 from rest_framework import viewsets, permissions, generics, filters
 from .patientSerializer import PatientSerializer
 from .doctorSerializer import DoctorSerializer
-from .patientImageSerializer import PatientImageSerializer
-from django.http import Http404
+from .pathologyScanSerializer import PathologyScanSerializer
+from rest_framework.parsers import MultiPartParser, FormParser
+from django.http import Http404, HttpResponse 
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -11,6 +12,7 @@ from rest_framework.parsers import JSONParser
 from url_filter.integrations.drf import DjangoFilterBackend
 from .gcp_operations import download_subdir,upload_file
 from .tif_conversion import convertTifToJpg
+from django.shortcuts import render, redirect 
 import os
 
 gcp_bucket = "patients_image"
@@ -29,13 +31,13 @@ class DoctorViewSet(viewsets.ModelViewSet):
     ]
     serializer_class = DoctorSerializer
 
-class PatientImageViewSet(viewsets.ModelViewSet):
-    queryset = PatientImage.objects.all()
-    permissions_classes = [
-        permissions.AllowAny
-    ]
-    serializer_class = PatientImageSerializer
-    filterset_fields = ['patient', 'imagefile']
+# class PatientImageViewSet(viewsets.ModelViewSet):
+#     queryset = PatientImage.objects.all()
+#     permissions_classes = [
+#         permissions.AllowAny
+#     ]
+#     serializer_class = PatientImageSerializer
+#     filterset_fields = ['patient', 'imagefile']
 
 class GCPImage(APIView):
     """
@@ -59,6 +61,15 @@ class GCPImage(APIView):
             curFilePath = dl_localdir + str(pk) + '_'+ image.get('imagefile')
             convertTifToJpg(curFilePath,dl_localdir)
         return Response(image_list)
+
+class PathologyImageScanView(viewsets.ModelViewSet):
+    queryset = PathologyScan.objects.all()
+    serializer_class = PathologyScanSerializer
+    permissions_classes = [
+        permissions.AllowAny
+    ]
+    parser_classes = (MultiPartParser, FormParser)
+	
 
 
 
