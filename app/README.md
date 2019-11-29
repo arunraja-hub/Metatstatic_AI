@@ -64,7 +64,7 @@ On the other hand, the doctor, who is the targeted user, can immediately embark 
 
 ## Build Plan
 
-We have developed a complete Gantt chart which lays out the detailed schedule we will be following towards our final demo on November 28:
+We have developed a complete Gantt chart which lays out the detailed schedule we will be following towards our second MVP on May 31 2020:
 
 ![gantt](./build.jpg)
 
