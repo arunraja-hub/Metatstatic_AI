@@ -1,5 +1,5 @@
 # Metastatic.ai
-![meta](./76616532_276246219975924_6776820895387222016_n.jpg.jpg)
+![meta](./src/assets/logo.png)
 
 
 ## Problem
@@ -34,14 +34,29 @@ The following diagram gives a high-level overview of the machine learning proces
 ### Setup script
 
 Run the following development detup script:
-    --script--
-
+    ../src/bootstrap.ps1
     
+
 
 ### Web app
 
  Visit our web app here: https://narwhals-ai.herokuapp.com/
 
+### Production
+
+#### Logging Setup
+
+ ![LogDNA](./logDNA.png)
+
+#### Exception Tracking Setup
+
+ ![Sentry](./Sentry.png)
+
+#### Github CI Actions
+ ![GithubCI](./GithubCI.png)
+
+#### Database
+ ![Database](./Database.png)
 
 
 ## User Persona
