@@ -30,6 +30,7 @@ The following diagram gives a high-level overview of the machine learning proces
 ### Architecture
  
  ![Dashboard](./archi.jpg)
+ 
 
 ### Setup script
 
@@ -48,7 +49,7 @@ Run the following development detup script:
 
 #### Logging Setup
 
- ![LogDNA](./logDNA.jpg)
+ ![LogDNA](./LogDNA.jpg)
 
 #### Exception Tracking Setup
 
