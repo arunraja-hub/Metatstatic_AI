@@ -1,239 +1,95 @@
-# [Material Dashboard React](https://demos.creative-tim.com/material-dashboard-react/#/dashboard) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcreativetimofficial.github.io%2Fmaterial-dashboard-react&text=Material%20Dashboard%20React%20-%20Free%20Bootstrap%20Admin%20Template&original_referer=https%3A%2F%2Fdemos.creative-tim.com%2Fmaterial-dashboard-react%2F%3F_ga%3D2.10428917.198078103.1532329372-1803433978.1528781151&via=creativetim&hashtags=react%2Cmaterial-ui)
+# Metastatic.ai
+![meta](./src/assets/logo.png)
+
+
+## Problem
+Metastatic cancer is a type of cancer that can spread from part of the body to another. 
+    *fatal disease where past the early stage prolonging survival is the only option
+
+Estimated that 42,260 will die from breast cancer this year in the U.S.
+    *90% of those deaths are caused by metastatic breast cancer. 
+    *Only 25% of patients with metastatic breast cancer will survive in a 5-year period.[1]
+
+
+Thus, our aim is:
+
+    We are aiming to provide a platform to support doctors and oncologists effectively cure metastatic cancer at an early stage and prevent patients from reaching the later stages where prolonging survivability is the only option.
+
+## Solution
+
+Our solution is to develop a computer vision detection application that can analyze an input image of a metastatic tissue and output whether tissue is malignant or not. That way we will be able to save the precious time the oncologist/pathologist spends on studying the suspected tissue. They will be able to know whether a given tissue is malignant or not immediately, thereby allowing them to make further decisions on the treatments to be administered to get rid of the cancer at the early stage. 
+The following diagram gives a high-level overview of the machine learning process:
+![ml pipeline](./unnamed2.jpg)
+
+## Technologies employed
+
+![ml pipeline](./tech.jpg)
 
 
 
-![version](https://img.shields.io/badge/version-1.8.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard-react.svg?maxAge=2592000)]() [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard-react.svg?maxAge=2592000)]() [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim/material-dashboard?utm_source=share-link&utm_medium=link&utm_campaign=share-link) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+### Architecture
+ 
+ ![Dashboard](./archi.jpg)
 
-![Product Gif](src/assets/github/md-react.gif)
+### Setup script
 
-Material Dashboard React is a free Material-UI Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts through an easy to use and beautiful set of components. Material Dashboard React was built over the popular Material-UI framework.
-
-Material Dashboard React makes use of light, surface and movement. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left sidebar and the content is on the right inside the main panel.
-
-Material Dashboard React comes with 5 color filter choices for both the sidebar and the card headers (blue, green, orange, red and purple) and an option to have a background image on the sidebar.
-
-Material Dashboard React was created using [create-react-app](https://github.com/facebook/create-react-app) and it uses a framework built by our friend [Olivier - Material-UI v3.1.0](https://github.com/mui-org/material-ui), who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to his team for the effort and forward thinking they put into it.
-
-Special thanks go to:
-+ [React-chartist](https://github.com/fraserxu/react-chartist) for the wonderful charts.
-
-We are very excited to share this dashboard with you and we look forward to hearing your feedback!
-
-You can find the Github Repo here.
-
-## Table of Contents
-
-* [Versions](#versions)
-* [Demo](#demo)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
-* [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
+Run the following development detup script:
+    ../src/bootstrap.ps1
+    
 
 
-## Versions
+### Web app
 
-[<img src="src/assets/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard)
-[<img src="src/assets/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react)
-[<img src="src/assets/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard)
-[<img src="src/assets/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-angular2)
+ Visit our web app here: https://narwhals-ai.herokuapp.com/
 
+### Production
 
-| HTML | React | Vue | Angular |
-| --- | --- | --- | --- |
-| [![Material Dashboard HTML](src/assets/github/opt_md_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard) | [![Material Dashboard React](src/assets/github/opt_mdr_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react) | [![Vue Material Dashboard ](src/assets/github/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard) | [![Material Dashboard Angular](src/assets/github/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-angular2)
+#### Logging Setup
 
-## Demo
+ ![LogDNA](./logDNA.png)
 
-| Dashboard | User Profile | Tables | Maps | Notification |
-| --- | --- | --- | --- | --- |
-| [![Start page](src/assets/github/dashboard.png)](https://demos.creative-tim.com/material-dashboard-react/#/dashboard) | [![User profile page](src/assets/github/user_profile.png)](https://demos.creative-tim.com/material-dashboard-react/#/user) | [![Tables page ](src/assets/github/tables.png)](https://demos.creative-tim.com/material-dashboard-react/#/table) | [![Maps Page](src/assets/github/maps.png)](https://demos.creative-tim.com/material-dashboard-react/#/maps) | [![Notification page](src/assets/github/notification.png)](https://demos.creative-tim.com/material-dashboard-react/#/notifications)
+#### Exception Tracking Setup
 
-[View More](https://demos.creative-tim.com/material-dashboard-react/#/dashboard).
+ ![Sentry](./Sentry.png)
 
+#### Github CI Actions
+ ![GithubCI](./GithubCI.png)
 
-## Quick start
-
-Quick start options:
-
-- `npm i material-dashboard-react`
-- Clone the repo: `git clone https://github.com/creativetimofficial/material-dashboard-react.git`.
-- [Download from Github](https://github.com/creativetimofficial/material-dashboard-react/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/material-dashboard-react).
+#### Database
+ ![Database](./Database.png)
 
 
-## Documentation
-The documentation for the Material Dashboard React is hosted at our [website](https://demos.creative-tim.com/material-dashboard-react/#/documentation/tutorial).
+## User Persona
+
+### Doctors / Oncologists in Hospitals
+    Target User
+
+Doctors and Medical Oncologists from hospitals and cancer centers are our target customers. With metastatic cancer having a pretty low survival rate, the doctors will need more support in order to treat their patients thoroughly. With the use of our product, doctors could achieve significantly earlier detections of metastatic cancer. They would simply need to upload scan of the H&E stained image to our application and the output will be the risk score. That way, they can save time on studying the scans and immediately plan the treatment for their patients. By being able to embark on treatment early, there is a significantly higher chance of curing the patient. That way the doctor can ensure that the patient does not go through the further hardships with cancer and his/her longevity.
+The doctor can also take H&E stained images in regular intervals and analyses them using our application to track the risk scores. Doctors will be able to understand the effect of their treatment on the cancer over time. To facilitate this tracking process, a record is maintained for each patient in the application.
+
+### Metastatic Cancer patients
+    Indirect User
+
+The ultimate, though indirect, purpose of the app we will be building is to help patients detect the metastatic cancer they may have so as to start providing them treatment at an early stage.
+The pathological report generated by the doctor using our application could help patients get some information regarding the cancer.
+On the other hand, the doctor, who is the targeted user, can immediately embark on the right direction of treatment based on the result output by our model. The patient can receive early stage treatment and has a significantly higher chance of getting cured. 
 
 
-## File Structure
-
-Within the download you'll find the following directories and files:
-
-```
-material-dashboard-react
-.
-├── CHANGELOG.md
-├── ISSUE_TEMPLATE.md
-├── LICENSE.md
-├── README.md
-├── bower.json
-├── gulpfile.js
-├── jsconfig.json
-├── package.json
-├── documentation
-│   ├── assets
-│   │   ├── css
-│   │   ├── img
-│   │   │   └── faces
-│   │   └── js
-│   └── tutorial-components.html
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-└── src
-    ├── index.js
-    ├── logo.svg
-    ├── routes.js
-    ├── assets
-    │   ├── css
-    │   │   └── material-dashboard-react.css
-    │   ├── github
-    │   │   ├── md-react.gif
-    │   │   └── react.svg
-    │   ├── img
-    │   │   └── faces
-    │   └── jss
-    │       ├── material-dashboard-react
-    │       │   ├── components
-    │       │   ├── layouts
-    │       │   └── views
-    │       └── material-dashboard-react.js
-    ├── components
-    │   ├── Card
-    │   │   ├── Card.js
-    │   │   ├── CardAvatar.js
-    │   │   ├── CardBody.js
-    │   │   ├── CardFooter.js
-    │   │   ├── CardHeader.js
-    │   │   └── CardIcon.js
-    │   ├── CustomButtons
-    │   │   └── Button.js
-    │   ├── CustomInput
-    │   │   └── CustomInput.js
-    │   ├── CustomTabs
-    │   │   └── CustomTabs.js
-    │   ├── FixedPlugin
-    │   │   └── FixedPlugin.js
-    │   ├── Footer
-    │   │   └── Footer.js
-    │   ├── Grid
-    │   │   ├── GridContainer.js
-    │   │   └── GridItem.js
-    │   ├── Navbars
-    │   │   ├── AdminNavbarLinks.js
-    │   │   ├── Navbar.js
-    │   │   └── RTLNavbarLinks.js
-    │   ├── Sidebar
-    │   │   └── Sidebar.js
-    │   ├── Snackbar
-    │   │   ├── Snackbar.js
-    │   │   └── SnackbarContent.js
-    │   ├── Table
-    │   │   └── Table.js
-    │   ├── Tasks
-    │   │   └── Tasks.js
-    │   └── Typography
-    │       ├── Danger.js
-    │       ├── Info.js
-    │       ├── Muted.js
-    │       ├── Primary.js
-    │       ├── Quote.js
-    │       ├── Success.js
-    │       └── Warning.js
-    ├── layouts
-    │   ├── Admin.js
-    │   └── RTL.js
-    ├── variables
-    │   ├── charts.js
-    │   └── general.js
-    └── views
-        ├── Dashboard
-        │   └── Dashboard.js
-        ├── Icons
-        │   └── Icons.js
-        ├── Maps
-        │   └── Maps.js
-        ├── Notifications
-        │   └── Notifications.js
-        ├── RTLPage
-        │   └── RTLPage.js
-        ├── TableList
-        │   └── TableList.js
-        ├── Typography
-        │   └── Typography.js
-        ├── UpgradeToPro
-        │   └── UpgradeToPro.js
-        └── UserProfile
-            └── UserProfile.js
-```
-
-## Browser Support
-
-At present, we officially aim to support the last two versions of the following browsers:
-
-<img src="src/assets/github/chrome.png" width="64" height="64"> <img src="src/assets/github/firefox.png" width="64" height="64"> <img src="src/assets/github/edge.png" width="64" height="64"> <img src="src/assets/github/safari.png" width="64" height="64"> <img src="src/assets/github/opera.png" width="64" height="64">
 
 
-## Resources
-- Demo: https://demos.creative-tim.com/material-dashboard-react
-- Download Page: https://www.creative-tim.com/product/material-dashboard-react
-- Documentation: https://demos.creative-tim.com/material-dashboard-react/#/documentation/tutorial
-- License Agreement: https://www.creative-tim.com/license
-- Support: https://www.creative-tim.com/contact-us
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard-react/issues)
-- [Material Kit React - For Front End Development](https://www.creative-tim.com/product/material-kit-react?ref=github-mdr-free)
+## Build Plan
 
-## Reporting Issues
-We use GitHub Issues as the official bug tracker for the Material Dashboard React. Here are some advices for our users that want to report an issue:
+We have developed a complete Gantt chart which lays out the detailed schedule we will be following towards our second MVP on May 31 2020:
 
-1. Make sure that you are using the latest version of the Material Dashboard React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+![gantt](./build.jpg)
 
-## Technical Support or Questions
+We hope to follow our timeline as close as possible and achieve the milestones mentioned.
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
+## References
+[1]Tarver, Talicia. “Cancer Facts &amp; Figures 2012. American Cancer Society (ACS).” Journal of Consumer Health On the Internet, vol. 16, no. 3, 2012, pp. 366–367., doi:10.1080/15398285.2012.701177.
 
-## Licensing
+[2] "Metastatic tissue scans", B. S. Veeling, J. Linmans, J. Winkens, T. Cohen, M. Welling. "Rotation Equivariant CNNs for Digital Pathology". arXiv:1806.03962 
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com)
-- Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-react/blob/master/LICENSE.md)
+[3]  "Sample-Surgical Pathology Report, UHN" https://www.researchgate.net/profile/Sylvia_Asa/publication/319357366/figure/fig2/AS:613886776573952@1523373421045/The-consolidated-theranostic-report-surgical-pathology-An-example-deidentified-to.png
 
-## Useful Links
 
-More products from Creative Tim: <https://www.creative-tim.com/products>
-
-Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
-
-Freebies: <https://www.creative-tim.com/products>
-
-Affiliate Program (earn money): <https://www.creative-tim.com/affiliates/new>
-
-Social Media:
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
