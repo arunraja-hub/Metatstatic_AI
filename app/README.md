@@ -25,11 +25,14 @@ The following diagram gives a high-level overview of the machine learning proces
 
 ![ml pipeline](./tech.jpg)
 
+We are using GCP as bridge between frontend/backend and ML model. Github is used for CI/CD. Finally, Heroku is used to deploy the app as a website.
 
 
 ### Architecture
  
  ![Dashboard](./architecture.jpg)
+ 
+ Our Machine Learning Model is exported as a Class Object in our backend. Our React JS Frontend will fetch ML Prediction Score from our Django prediction object dynamically.
  
 
 ### Setup script
