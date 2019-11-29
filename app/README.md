@@ -39,8 +39,7 @@ We are using GCP as bridge between frontend/backend and ML model. Github is used
 
 Run the following development detup script:
     ../src/bootstrap.ps1
-   
-    https://github.com/dcsil/Narwhals/blob/master/src/boostrap.ps1
+https://github.com/dcsil/Narwhals/blob/master/src/boostrap.ps1
     
 
 
