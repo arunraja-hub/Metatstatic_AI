@@ -31,5 +31,6 @@ class PathologyScanSerializer(serializers.ModelSerializer):
         if obj.ml_prediction == 0.0:
             srcFile = obj.pathology_Main_Img.path
             ml_score = NarwhalsConfig.predictor.predict(srcFile) * 100
+            print(ml_score)
             return ml_score
         return obj.ml_prediction

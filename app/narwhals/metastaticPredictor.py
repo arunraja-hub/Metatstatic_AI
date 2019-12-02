@@ -49,5 +49,6 @@ class MetastaticPredictor:
                                                 shuffle=False)
         predictions = self.model.predict_generator(pred_gen, steps=1, verbose=1)
         print(predictions)
-        print(predictions[0][1])
-        return predictions[0][1]
+        print(str(round(predictions[0][1],2)))
+        result = str(round(predictions[0][1],4))
+        return float(result)

@@ -51,6 +51,7 @@ const FileUpload = () => {
         const filePath = res.data.jpg_file;
         const fileName = res.data.name;
         const riskScore = res.data.ml_prediction;
+        console.log(riskScore)
   
         //const { fileName, filePath } = res.data;
   
