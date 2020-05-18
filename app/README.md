@@ -19,7 +19,7 @@ Thus, our aim is:
 
 Our solution is to develop a computer vision detection application that can analyze an input image of a metastatic tissue and output whether tissue is malignant or not. That way we will be able to save the precious time the oncologist/pathologist spends on studying the suspected tissue. They will be able to know whether a given tissue is malignant or not immediately, thereby allowing them to make further decisions on the treatments to be administered to get rid of the cancer at the early stage. 
 The following diagram gives a high-level overview of the machine learning process:
-![ml pipeline](../product_research/unnamed2.jpg)
+![ml pipeline](./mlmodel.jpg)
 
 ## Technologies employed
 
