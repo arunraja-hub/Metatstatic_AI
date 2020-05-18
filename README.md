@@ -1,33 +1,107 @@
-# Team Repo Template
+# Metastatic.ai
+![meta](./src/assets/logo.png)
 
-This Repository includes a template for your assignments.
 
-Follow [these instructions](https://help.github.com/en/articles/creating-a-repository-from-a-template) to create a repo in the `dcsil` organization for your Assignment.
+## Problem
+Metastatic cancer is a type of cancer that can spread from part of the body to another. 
+    *fatal disease where past the early stage prolonging survival is the only option
 
-## Requirements
+Estimated that 42,260 will die from breast cancer this year in the U.S.
+    *90% of those deaths are caused by metastatic breast cancer. 
+    *Only 25% of patients with metastatic breast cancer will survive in a 5-year period.[1]
 
-You must [add the following topics](https://help.github.com/en/articles/classifying-your-repository-with-topics#adding-topics-to-your-repository) to the repository:
 
-- `F19` (indicates Fall 2019. If it is not Fall 2019, I forgot to update this. Please make a PR on this repo to update it to the appropriate term!)
-- `assignment`
+Thus, our aim is:
 
-### README template starts below this line 👇👇👇
+    We are aiming to provide a platform to support doctors and oncologists effectively cure metastatic cancer at an early stage and prevent patients from reaching the later stages where prolonging survivability is the only option.
 
-----
+## Solution
 
-# narwh.Al
+Our solution is to develop a computer vision detection application that can analyze an input image of a metastatic tissue and output whether tissue is malignant or not. That way we will be able to save the precious time the oncologist/pathologist spends on studying the suspected tissue. They will be able to know whether a given tissue is malignant or not immediately, thereby allowing them to make further decisions on the treatments to be administered to get rid of the cancer at the early stage. 
+The following diagram gives a high-level overview of the machine learning process:
+![ml pipeline](../product_research/unnamed2.jpg)
 
-![Team Logo](./NARWH_AI.png)
+## Technologies employed
 
-narwh.Al is a company founded in the Healthcare industry. narwh.Al aims to VISION STATEMENT.
+![ml pipeline](./tech.jpg)
 
-Table of Contents
----
+We are using GCP as bridge between frontend/backend and ML model. Github is used for CI/CD. Finally, Heroku is used to deploy the app as a website.
 
-- [People](./team/)
-- [Diversity](./team/diversity.md)
-- [Product & Research](./product_research/)
-    - [Market](./product_research/market.md)
-    - [Roadmap](./product_research/roadmap.md)
-    - [User Validation and Roadmap](./product_research/UserValidation&Roadmap.md)
+
+### Architecture
+ 
+ ![Dashboard](./architecture.jpg)
+ 
+ Our Machine Learning Model is exported as a Class Object in our backend. Our React JS Frontend will fetch ML Prediction Score from our Django prediction object dynamically.
+ 
+
+### Setup script
+
+Run the following development setup script:
+    ../src/bootstrap.ps1
+https://github.com/dcsil/Narwhals/blob/master/src/boostrap.ps1
+    
+
+
+### Web app
+
+ Visit our web app here: https://narwhals-ai.herokuapp.com/
+ 
+ Use Sample Images from this link to test our ML Image Anaysis Features:
+ https://github.com/dcsil/Narwhals/tree/master/app/images
+
+### Production
+
+#### Logging Setup
+
+ ![LogDNA](./LogDNA.jpg)
+
+#### Exception Tracking Setup
+
+ ![Sentry](./Sentry.jpg)
+
+#### Github CI Actions
+ ![GithubCI](./GithubCI.jpg)
+
+#### Database
+ ![Database](./Database.jpg)
+ 
+ #### Service Yaml 
+ 
+ https://github.com/dcsil/Narwhals/blob/master/app/service.yml
+
+
+## User Persona
+
+### Doctors / Oncologists in Hospitals
+    Target User
+
+Doctors and Medical Oncologists from hospitals and cancer centers are our target customers. With metastatic cancer having a pretty low survival rate, the doctors will need more support in order to treat their patients thoroughly. With the use of our product, doctors could achieve significantly earlier detections of metastatic cancer. They would simply need to upload scan of the H&E stained image to our application and the output will be the risk score. That way, they can save time on studying the scans and immediately plan the treatment for their patients. By being able to embark on treatment early, there is a significantly higher chance of curing the patient. That way the doctor can ensure that the patient does not go through the further hardships with cancer and his/her longevity.
+The doctor can also take H&E stained images in regular intervals and analyses them using our application to track the risk scores. Doctors will be able to understand the effect of their treatment on the cancer over time. To facilitate this tracking process, a record is maintained for each patient in the application.
+
+### Metastatic Cancer patients
+    Indirect User
+
+The ultimate, though indirect, purpose of the app we will be building is to help patients detect the metastatic cancer they may have so as to start providing them treatment at an early stage.
+The pathological report generated by the doctor using our application could help patients get some information regarding the cancer.
+On the other hand, the doctor, who is the targeted user, can immediately embark on the right direction of treatment based on the result output by our model. The patient can receive early stage treatment and has a significantly higher chance of getting cured. 
+
+
+
+
+## Build Plan
+
+We have developed a complete Gantt chart which lays out the detailed schedule we will be following towards our second MVP on May 31 2020:
+
+![gantt](./build.jpg)
+
+We hope to follow our timeline as close as possible and achieve the milestones mentioned.
+
+## References
+[1]Tarver, Talicia. “Cancer Facts &amp; Figures 2012. American Cancer Society (ACS).” Journal of Consumer Health On the Internet, vol. 16, no. 3, 2012, pp. 366–367., doi:10.1080/15398285.2012.701177.
+
+[2] "Metastatic tissue scans", B. S. Veeling, J. Linmans, J. Winkens, T. Cohen, M. Welling. "Rotation Equivariant CNNs for Digital Pathology". arXiv:1806.03962 
+
+[3]  "Sample-Surgical Pathology Report, UHN" https://www.researchgate.net/profile/Sylvia_Asa/publication/319357366/figure/fig2/AS:613886776573952@1523373421045/The-consolidated-theranostic-report-surgical-pathology-An-example-deidentified-to.png
+
 
