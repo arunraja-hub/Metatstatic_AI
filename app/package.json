@@ -5,7 +5,7 @@
     "@coreui/coreui": "^2.0.1",
     "@coreui/icons": "^0.2.0",
     "@coreui/react": "^2.0.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "filepond": "^4.7.4",
     "filepond-plugin-image-exif-orientation": "^1.0.6",
     "filepond-plugin-image-preview": "^4.5.0",
